@@ -1,0 +1,70 @@
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: blue;
+  font-size: 2.6rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+
+h4 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 2.2rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+footer p {
+  font-size: 1.6rem;
+}
+
+#author {
+  font-style: italic;
+  font-size: 1.8rem;
+}
+
+#copyright {
+  font-size: 1.6rem;
+}
+
+.related-author {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+aside ul {
+  list-style: none;
+}
