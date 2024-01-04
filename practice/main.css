@@ -2,6 +2,16 @@ html {
   font-size: 62.5%;
 }
 
+* {
+  /* border-top: 1rem solid #1098ad; */
+}
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 1rem solid #1098ad;
+}
+
 h1,
 h2,
 h3,
@@ -9,46 +19,46 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 
 h1 {
-  color: blue;
   font-size: 2.6rem;
-  font-family: sans-serif;
   text-transform: uppercase;
   font-style: italic;
 }
 
 h2 {
   font-size: 4rem;
-  font-family: sans-serif;
 }
 
 h3 {
   font-size: 3rem;
-  font-family: sans-serif;
 }
 
 h4 {
   font-size: 2rem;
-  font-family: sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
 
 p {
   font-size: 2.2rem;
-  font-family: sans-serif;
   line-height: 1.5;
 }
 
 li {
   font-size: 2rem;
-  font-family: sans-serif;
 }
 
-footer p {
-  font-size: 1.6rem;
+nav {
+  font-size: 1.8rem;
 }
 
 #author {
@@ -68,3 +78,61 @@ footer p {
 aside ul {
   list-style: none;
 }
+
+#main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+li:first-child {
+  font-style: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #35d28eac;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
+
+/* nav a:link {
+  font-size: 1.8rem;
+} */
