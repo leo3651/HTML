@@ -2,9 +2,19 @@ html {
   font-size: 62.5%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.5;
+}
+
+.container {
+  margin: 5rem auto;
+  width: 825px;
 }
 
 h2 {
@@ -12,20 +22,47 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
 }
 
 h3 {
   font-size: 2.5rem;
   text-transform: uppercase;
-}
-
-p strong {
-  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 p,
 ul {
   font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+p:nth-child(4) {
+  text-transform: uppercase;
+  color: rgb(122, 150, 141);
+}
+
+ul {
+  margin-bottom: 1.5rem;
+  margin-left: 3rem;
+}
+
+.price {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.p-link {
+  margin-bottom: 2.5rem;
+}
+
+.converse-img {
+  margin-bottom: 1.5rem;
 }
 
 button {
@@ -35,6 +72,8 @@ button {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  width: 100%;
+  padding: 2rem 3rem;
 }
 
 button:hover {
@@ -44,11 +83,6 @@ button:hover {
 
 button:active {
   background-color: rgb(100, 108, 174);
-}
-
-p:nth-child(4) {
-  text-transform: uppercase;
-  color: rgb(122, 150, 141);
 }
 
 article {
@@ -64,4 +98,12 @@ article {
 .link:active {
   color: rgb(238, 147, 218);
   text-decoration: none;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+li:last-child {
+  margin: 0;
 }
