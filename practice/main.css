@@ -8,10 +8,12 @@ html {
   padding: 0;
 }
 
+/* Page sections */
 body {
   color: #444;
   font-family: sans-serif;
   border-top: 1rem solid #1098ad;
+  position: relative;
 }
 
 .container {
@@ -21,6 +23,39 @@ body {
   margin: 0 auto;
 }
 
+article {
+  margin-bottom: 6rem;
+}
+
+.post-header {
+  margin-bottom: 4rem;
+}
+
+#main-header {
+  background-color: #f7f7f7;
+  /* padding: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem; */
+  padding: 2rem 4rem;
+  margin-bottom: 6rem;
+  /*   height: 8rem; */
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /* padding-top: 5rem;
+  padding-bottom: 5rem; */
+  padding: 5rem 0;
+  width: 50rem;
+}
+
+nav {
+  font-size: 1.8rem;
+}
+
+/* Smaller elements*/
 h1,
 h2,
 h3,
@@ -65,37 +100,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
-article {
-  margin-bottom: 6rem;
-}
-
-.post-header {
-  margin-bottom: 4rem;
-}
-
-#main-header {
-  background-color: #f7f7f7;
-  /* padding: 2rem;
-  padding-left: 4rem;
-  padding-right: 4rem; */
-  padding: 2rem 4rem;
-  margin-bottom: 6rem;
-  height: 8rem;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-  /* padding-top: 5rem;
-  padding-bottom: 5rem; */
-  padding: 5rem 0;
-  width: 50rem;
-}
-
 li {
   font-size: 2rem;
   margin-bottom: 1rem;
+  /*   display: inline; */
 }
 
 li:last-child {
@@ -106,10 +114,6 @@ ul,
 ol {
   margin-left: 5rem;
   margin-bottom: 2rem;
-}
-
-nav {
-  font-size: 1.8rem;
 }
 
 .post-img {
@@ -162,6 +166,57 @@ a:active {
   background-color: black;
   font-style: italic;
 }
+
+nav a:link {
+  /*   background-color: orangered;
+  margin: 2rem;
+  padding: 2rem;
+  display: block; */
+  margin-right: 3rem;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+.like-btn {
+  font-size: 2.2rem;
+  padding: 2.2rem;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 0.5rem;
+}
+
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+/* h3 + p::first-line {
+  color: red;
+} */
 
 /* #copyright {
   color: red;
