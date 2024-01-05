@@ -1,0 +1,67 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h2 {
+  background-color: rgb(190, 226, 177);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+p strong {
+  font-size: 3rem;
+}
+
+p,
+ul {
+  font-size: 2rem;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+button:active {
+  background-color: rgb(100, 108, 174);
+}
+
+p:nth-child(4) {
+  text-transform: uppercase;
+  color: rgb(122, 150, 141);
+}
+
+article {
+  border: black solid 0.5rem;
+}
+
+.link,
+.link:visited {
+  color: rgb(0, 0, 0);
+}
+
+.link:hover,
+.link:active {
+  color: rgb(238, 147, 218);
+  text-decoration: none;
+}

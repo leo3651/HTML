@@ -4,6 +4,8 @@ html {
 
 * {
   /* border-top: 1rem solid #1098ad; */
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -40,6 +42,8 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 
 h4 {
@@ -51,14 +55,59 @@ h4 {
 p {
   font-size: 2.2rem;
   line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+article {
+  margin-bottom: 6rem;
+}
+
+.post-header {
+  margin-bottom: 4rem;
+}
+
+#main-header {
+  background-color: #f7f7f7;
+  /* padding: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem; */
+  padding: 2rem 4rem;
+  margin-bottom: 6rem;
+  height: 8rem;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /* padding-top: 5rem;
+  padding-bottom: 5rem; */
+  padding: 5rem 0;
+  width: 50rem;
 }
 
 li {
   font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-left: 5rem;
+  margin-bottom: 2rem;
 }
 
 nav {
   font-size: 1.8rem;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
 }
 
 #author {
@@ -77,16 +126,6 @@ nav {
 
 aside ul {
   list-style: none;
-}
-
-#main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 li:first-child {
