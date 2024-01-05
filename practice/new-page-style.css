@@ -15,6 +15,7 @@ body {
 .container {
   margin: 5rem auto;
   width: 825px;
+  position: relative;
 }
 
 h2 {
@@ -106,4 +107,50 @@ li {
 
 li:last-child {
   margin: 0;
+}
+
+.colors {
+  margin-bottom: 2rem;
+}
+
+.black {
+  background-color: black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.color {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.sale {
+  color: white;
+  background-color: red;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  font-size: 2rem;
+  top: -15px;
+  left: -20px;
+  letter-spacing: 0.2rem;
 }
