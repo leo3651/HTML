@@ -12,7 +12,6 @@ html {
 body {
   color: #444;
   font-family: sans-serif;
-  border-top: 1rem solid #1098ad;
   position: relative;
 }
 
@@ -21,6 +20,7 @@ body {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
+  border-top: 1rem solid #1098ad;
 }
 
 article {
@@ -53,7 +53,12 @@ aside {
 
 nav {
   font-size: 1.8rem;
-  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Smaller elements*/
@@ -95,6 +100,7 @@ h4 {
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 p {
@@ -161,7 +167,7 @@ a:link {
 }
 
 a:visited {
-  color: #35d28eac;
+  color: #1098ad;
 }
 
 a:hover {
@@ -181,7 +187,7 @@ nav a:link {
   padding: 2rem;
   display: block; */
   margin-right: 3rem;
-  margin-top: 1rem;
+  /*margin-top: 1rem; */
   display: inline-block;
 }
 
@@ -222,7 +228,7 @@ ul li:last-child p:last-child {
 }
 
 ul li img {
-  margin: 1rem;
+  margin: 2rem;
 }
 
 ul li p {
@@ -241,6 +247,27 @@ aside ul {
   display: flex;
   gap: 3rem;
   align-items: center;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+p.related-author {
+  margin: 0;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.related-link:link {
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 0.5rem;
+  display: inline-block;
 }
 
 /* h3 + p::first-line {
