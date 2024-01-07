@@ -20,7 +20,8 @@ body {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
-  border-top: 1rem solid #1098ad;
+  /*   border-top: 1rem solid #1098ad;
+ */
 }
 
 article {
@@ -47,8 +48,8 @@ aside {
   border-bottom: 5px solid #1098ad;
   /* padding-top: 5rem;
   padding-bottom: 5rem; */
-  padding: 5rem 0;
-  width: 50rem;
+  padding: 5rem 3rem;
+  width: 30rem;
 }
 
 nav {
@@ -220,7 +221,6 @@ h2::after {
   padding: 0.5rem 1rem;
   position: absolute;
   top: -10px;
-  right: 380px;
 }
 
 ul li:last-child p:last-child {
@@ -228,7 +228,7 @@ ul li:last-child p:last-child {
 }
 
 ul li img {
-  margin: 2rem;
+  margin-right: 2rem;
 }
 
 ul li p {
@@ -240,7 +240,7 @@ ul {
 }
 
 aside ul {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .author-container {
@@ -268,6 +268,19 @@ p.related-author {
   font-style: normal;
   margin-bottom: 0.5rem;
   display: inline-block;
+}
+
+.flex-column-container {
+  display: flex;
+  gap: 5rem;
+}
+
+.first-col {
+  border-top: 1rem solid #1098ad;
+}
+
+.second-col {
+  margin-top: 10rem;
 }
 
 /* h3 + p::first-line {
