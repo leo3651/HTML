@@ -20,8 +20,7 @@ body {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
-  /*   border-top: 1rem solid #1098ad;
- */
+  border-top: 1rem solid #1098ad;
 }
 
 article {
@@ -49,7 +48,7 @@ aside {
   /* padding-top: 5rem;
   padding-bottom: 5rem; */
   padding: 5rem 3rem;
-  width: 30rem;
+  align-self: baseline;
 }
 
 nav {
@@ -221,6 +220,7 @@ h2::after {
   padding: 0.5rem 1rem;
   position: absolute;
   top: -10px;
+  right: 0px;
 }
 
 ul li:last-child p:last-child {
@@ -270,17 +270,9 @@ p.related-author {
   display: inline-block;
 }
 
-.flex-column-container {
+.layout {
   display: flex;
-  gap: 5rem;
-}
-
-.first-col {
-  border-top: 1rem solid #1098ad;
-}
-
-.second-col {
-  margin-top: 10rem;
+  gap: 6rem;
 }
 
 /* h3 + p::first-line {
