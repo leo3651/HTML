@@ -11,6 +11,10 @@
       }
       .el--2 {
         background-color: orangered;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        /* grid-column: 1 / 4;
+        grid-column: 2 / -1; */
       }
       .el--3 {
         background-color: green;
@@ -21,15 +25,11 @@
       }
       .el--5 {
         background-color: palevioletred;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
       }
       .el--6 {
         background-color: steelblue;
-      }
-      .el--7 {
-        background-color: yellow;
-      }
-      .el--8 {
-        background-color: crimson;
       }
 
       .container--1 {
@@ -40,9 +40,18 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.5fr;
+        /*grid-template-columns: 1fr 1fr 1fr auto;
+        grid-template-columns: repeat(4, 1fr); */
+        grid-template-rows: 1.5fr 1fr;
+        /* grid-template-rows: 1fr auto; */
+        column-gap: 30px;
+        row-gap: 60px;
       }
 
       .container--2 {
+        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
@@ -64,8 +73,6 @@
       <div class="el el--4">(4) are</div>
       <div class="el el--5">(5) amazing</div>
       <div class="el el--6">(6) languages</div>
-      <div class="el el--7">(7) to</div>
-      <div class="el el--8">(8) learn</div>
     </div>
 
     <div class="container--2">
