@@ -11,8 +11,8 @@
       }
       .el--2 {
         background-color: orangered;
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
+        /* grid-column: 1 / 2;
+        grid-row: 2 / 3; */
         /* grid-column: 1 / 4;
         grid-column: 2 / -1; */
       }
@@ -25,11 +25,15 @@
       }
       .el--5 {
         background-color: palevioletred;
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
+        /* grid-column: 2 / 3;
+        grid-row: 1 / 2; */
       }
       .el--6 {
         background-color: steelblue;
+      }
+
+      .el--7 {
+        background-color: yellow;
       }
 
       .container--1 {
@@ -48,20 +52,36 @@
         /* grid-template-rows: 1fr auto; */
         column-gap: 30px;
         row-gap: 60px;
+        display: none;
       }
 
       .container--2 {
-        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+
+        /* Aligning tracks inside container */
+        justify-content: center;
+        align-content: center;
+
+        align-items: end;
+        justify-items: end;
+      }
+
+      .el--3 {
+        align-self: center;
+        justify-self: center;
       }
     </style>
   </head>
