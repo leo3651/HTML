@@ -65,6 +65,7 @@ ul {
 .converse-img {
   /* margin-bottom: 1.5rem; */
   height: 320px;
+  width: 100%;
 }
 
 button {
@@ -174,4 +175,20 @@ li:last-child {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  border: black solid 5px;
+}
+
+h2 {
+  grid-column: 1 / -1;
+  margin-top: 0;
+}
+
+button {
+  grid-column: 1 / -1;
 }
