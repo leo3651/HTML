@@ -37,6 +37,13 @@
       .accordion {
         width: 700px;
         margin: 48px auto;
+        box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 0.1);
+        padding: 20px 40px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        row-gap: 32px;
+        column-gap: 24px;
+        align-items: center;
       }
 
       .icon {
@@ -64,46 +71,109 @@
         margin-bottom: 24px;
         line-height: 1.6;
       }
-      .question-container {
-        display: flex;
-        justify-content: space-between;
+      .hidden-box {
+        grid-column: 2 / 3;
       }
     </style>
   </head>
   <body>
     <div class="accordion">
-      <div class="question-container">
-        <p class="question-number">05</p>
-        <p class="question">How long do you think it will take?</p>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="m19.5 8.25-7.5 7.5-7.5-7.5"
-          />
-        </svg>
+      <p class="question-number">05</p>
+      <p class="question">How long do you think it will take?</p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+        />
+      </svg>
+      <div class="hidden-box">
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+          sapiente velit. Animi inventore ipsum reprehenderit saepe distinctio
+          consequatur repellat.
+        </p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur</li>
+          <li>ipsum reprehenderit saepe distinctio</li>
+          <li>Dolorem molestias officia</li>
+          <li>ipsum reprehenderit saepe distinctio</li>
+          <li>Dolorem molestias officia</li>
+        </ul>
       </div>
+    </div>
 
-      <p class="text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-        sapiente velit. Animi inventore ipsum reprehenderit saepe distinctio
-        consequatur repellat. Dolorem molestias officia labore. Quo ipsa saepe
-        totam dolore voluptas sequi.
-      </p>
-      <ul>
-        <li>Lorem ipsum dolor sit amet consectetur</li>
-        <li>ipsum reprehenderit saepe distinctio</li>
-        <li>Dolorem molestias officia</li>
-        <li>ipsum reprehenderit saepe distinctio</li>
-        <li>Dolorem molestias officia</li>
-      </ul>
+    <div class="accordion">
+      <p class="question-number">05</p>
+      <p class="question">How long do you think it will take?</p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+        />
+      </svg>
+      <div class="hidden-box">
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+          sapiente velit. Animi inventore ipsum reprehenderit saepe distinctio
+          consequatur repellat.
+        </p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur</li>
+          <li>ipsum reprehenderit saepe distinctio</li>
+          <li>Dolorem molestias officia</li>
+          <li>ipsum reprehenderit saepe distinctio</li>
+          <li>Dolorem molestias officia</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <p class="question-number">05</p>
+      <p class="question">How long do you think it will take?</p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+        />
+      </svg>
+      <div class="hidden-box">
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+          sapiente velit. Animi inventore ipsum reprehenderit saepe distinctio
+          consequatur repellat.
+        </p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur</li>
+          <li>ipsum reprehenderit saepe distinctio</li>
+          <li>Dolorem molestias officia</li>
+          <li>ipsum reprehenderit saepe distinctio</li>
+          <li>Dolorem molestias officia</li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
