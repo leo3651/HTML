@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        font-size: 24px;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: auto 1fr 1fr 1fr;
+        background-color: #343a40;
+      }
+
+      nav {
+        background-color: #343a40;
+        color: #fff;
+        padding: 12px 24px;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+      }
+
+      menu {
+        grid-column: 2 / -1;
+        background-color: #7048e8;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+      }
+
+      aside {
+        background-color: #e9ecef;
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      section {
+        background-color: #e9ecef;
+        grid-column: 2 / span 1;
+        padding-top: 20px;
+        text-align: center;
+      }
+
+      .menu-btn:link,
+      .menu-btn:visited {
+        background-color: #5f3dc4;
+        padding: 12px 24px;
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        margin-right: 16px;
+      }
+
+      .menu-btn:last-child {
+        margin-right: 0;
+      }
+
+      .trash {
+        color: #fff;
+        background-color: red;
+        padding: 12px 24px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      main {
+        background-color: #fff;
+        text-align: center;
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <div>
+        <a href="$" class="menu-btn">New</a>
+        <a href="$" class="menu-btn">Reply</a>
+        <a href="$" class="menu-btn">Mark as read</a>
+        <a href="$" class="menu-btn">Forward</a>
+      </div>
+      <a href="$" class="trash">Trash</a>
+    </menu>
+    <section>Inbox</section>
+    <main>Email</main>
+    <aside>Info</aside>
+  </body>
+</html>
