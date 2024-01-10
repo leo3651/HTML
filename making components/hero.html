@@ -11,6 +11,12 @@
       rel="stylesheet"
     />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       html {
         font-family: "Salsa", sans-serif;
         color: #444;
@@ -21,36 +27,103 @@
         font-weight: 700;
         display: flex;
         justify-content: space-between;
+        padding-top: 32px;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 1200px;
+      }
+
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.1;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+
+      .btn:link,
+      .btn:visited {
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 500;
+        background-color: chocolate;
+        padding: 12px 24px;
+        display: inline-block;
+        border-radius: 10px;
+      }
+
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+
+      section {
+        padding: 96px 0;
+        background-color: #f7f7f7;
+      }
+
+      header {
+        color: #fff;
+        height: 100vh;
+        position: relative;
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.4),
+            rgba(34, 34, 34, 0.4)
+          ),
+          url(./backgroung-img.jpeg);
+        background-size: cover;
+      }
+
+      .header-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .half-of-container {
+        width: 50%;
       }
     </style>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="container">
         <div>Logo</div>
         <div>Navigation</div>
       </nav>
-      <div>
-        <h1>This is the h1 element in HTML and it is often used</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          incidunt quae quibusdam sed harum possimus et asperiores architecto
-          itaque doloribus.
-        </p>
-        <a href="#" class="btn">Start your journey</a>
+      <div class="container header-box">
+        <div class="half-of-container">
+          <h1>This is the h1 element in HTML and it is often used</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            incidunt quae quibusdam sed harum possimus et asperiores architecto
+            itaque doloribus.
+          </p>
+          <a href="#" class="btn">Start your journey</a>
+        </div>
       </div>
     </header>
     <section>
-      <h2>This is h2 heading element</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque est
-        aliquid fuga itaque vel dolores magnam, ea consequatur magni possimus
-        omnis harum dolorum deleniti porro eum, praesentium sint provident
-        optio! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Laudantium, optio veniam soluta earum sunt hic? Expedita, non
-        voluptatum? Mollitia ex, magni officiis enim incidunt saepe impedit
-        dolorum laudantium molestiae officia?
-      </p>
+      <div class="container">
+        <h2>This is h2 heading element</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque est
+          aliquid fuga itaque vel dolores magnam, ea consequatur magni possimus
+          omnis harum dolorum deleniti porro eum, praesentium sint provident
+          optio! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Laudantium, optio veniam soluta earum sunt hic? Expedita, non
+          voluptatum? Mollitia ex, magni officiis enim incidunt saepe impedit
+          dolorum laudantium molestiae officia?
+        </p>
+      </div>
     </section>
   </body>
 </html>
