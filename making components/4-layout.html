@@ -65,21 +65,21 @@
         font-weight: 700;
         background-color: #e9ecef;
         grid-column: 2 / span 1;
-        padding-top: 20px;
-        text-align: center;
+        padding: 20px 40px 40px 40px;
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 30px;
+        overflow: scroll;
       }
 
-      .menu-btn:link,
-      .menu-btn:visited {
+      .menu-btn {
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
         background-color: #5f3dc4;
         padding: 12px 24px;
         display: inline-block;
         color: #fff;
-        text-decoration: none;
         font-weight: 600;
         margin-right: 16px;
       }
@@ -89,10 +89,11 @@
       }
 
       .trash {
+        font-size: 16px;
+        border: none;
         color: #fff;
         background-color: red;
         padding: 12px 24px;
-        text-decoration: none;
         font-weight: 600;
       }
 
@@ -103,13 +104,14 @@
         font-weight: 700;
       }
 
-      .email-btn:link {
+      .email-btn {
         color: black;
-        padding: 24px 32px;
         background-color: #adb5bd;
-        display: inline-block;
-        text-decoration: none;
-        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        height: 100px;
       }
     </style>
   </head>
@@ -117,23 +119,24 @@
     <nav>Nav</nav>
     <menu>
       <div>
-        <a href="$" class="menu-btn">New</a>
-        <a href="$" class="menu-btn">Reply</a>
-        <a href="$" class="menu-btn">Mark as read</a>
-        <a href="$" class="menu-btn">Forward</a>
+        <button href="$" class="menu-btn">New</button>
+        <button href="$" class="menu-btn">Reply</button>
+        <button href="$" class="menu-btn">Mark as read</button>
+        <button href="$" class="menu-btn">Forward</button>
       </div>
-      <a href="$" class="trash">Trash</a>
+      <button href="$" class="trash">Trash</button>
     </menu>
     <section>
-      <a href="#" class="email-btn">Email 1</a>
-      <a href="#" class="email-btn">Email 2</a>
-      <a href="#" class="email-btn">Email 3</a>
-      <a href="#" class="email-btn">Email 4</a>
-      <a href="#" class="email-btn">Email 5</a>
-      <a href="#" class="email-btn">Email 6</a>
-      <a href="#" class="email-btn">Email 7</a>
-      <a href="#" class="email-btn">Email 8</a>
-      <a href="#" class="email-btn">Email 9</a>
+      <div class="email-btn">Email 1</div>
+      <div class="email-btn">Email 2</div>
+      <div class="email-btn">Email 3</div>
+      <div class="email-btn">Email 4</div>
+      <div class="email-btn">Email 5</div>
+      <div class="email-btn">Email 6</div>
+      <div class="email-btn">Email 7</div>
+      <div class="email-btn">Email 8</div>
+      <div class="email-btn">Email 9</div>
+      <div class="email-btn">Email 10</div>
     </section>
     <main>Email</main>
     <aside>Info</aside>
