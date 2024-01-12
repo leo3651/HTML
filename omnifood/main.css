@@ -32,13 +32,13 @@
         - GREYS: #555 #333
   
 
-  --- SHADOWS
+  --- 3 SHADOWS
   
 
-  --- BORDER RADIUS
+  --- 4 BORDER RADIUS
   
 
-  --- 7 WHITESPACE:
+  --- 5 WHITESPACE:
 
         - SPACING SYSTEM (px)
             2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -96,6 +96,22 @@ body {
 .btn-full:hover,
 .btn-full:active {
   background-color: #cf711f;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid--2cols-3rows {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 /************************/
@@ -220,4 +236,15 @@ header {
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/************************/
+/* SECTION HOW */
+/************************/
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.z-pattern-img {
+  width: 100%;
 }
