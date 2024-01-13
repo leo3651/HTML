@@ -173,3 +173,7 @@ body {
 .grid--3cols {
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+.grid--2cols {
+  grid-template-columns: 1fr 1fr;
+}
