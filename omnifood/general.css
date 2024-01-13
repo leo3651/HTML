@@ -79,11 +79,20 @@ body {
   color: #fff;
   padding: 1.6rem 3.2rem;
   border-radius: 1rem;
-  transition: background-color 0.3s;
+  box-shadow: none;
+  transition: all 0.3s;
 }
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .btn-outline:link,
@@ -136,6 +145,7 @@ body {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
+  color: #333;
 }
 
 .step-description {

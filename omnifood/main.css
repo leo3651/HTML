@@ -208,6 +208,11 @@ header {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 1.2rem;
   overflow: hidden;
+  transition: all 0.3s;
+}
+
+.meal:hover {
+  transform: scale(1.05);
 }
 
 .tag {
@@ -215,19 +220,37 @@ header {
   padding: 0.4rem 0.8rem;
   text-transform: uppercase;
   font-size: 1.2rem;
-  background-color: #51cf66;
   color: #333;
   border-radius: 10rem;
+  font-weight: 600;
+}
+
+.tag--vegeterian {
+  background-color: #51cf66;
+}
+
+.tag--vegan {
+  background-color: #94d82d;
+}
+
+.tag--paleo {
+  background-color: #ffd43b;
 }
 
 .meal-tag {
   margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.8rem;
 }
 
 .meal-img {
   width: 100%;
   /* border-top-right-radius: 1.2rem;
   border-top-left-radius: 1.2rem; */
+}
+
+.meal-txt {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
 .meal-title {
@@ -259,4 +282,45 @@ header {
 
 strong {
   font-weight: 500;
+}
+
+.list-of-diets {
+  list-style: none;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.diet-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.diet {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
 }
