@@ -329,14 +329,22 @@ strong {
 /* SECTION MEALS */
 /************************/
 .testemonials-section {
-  padding: 9.6rem 0;
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  align-items: center;
+}
+
+.testemonials-container {
+  padding: 9.6rem;
 }
 
 .testemonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 4.8rem;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
 }
 
 .testemonial-img {
@@ -353,5 +361,26 @@ strong {
 
 .testemonial-name {
   font-size: 1.6rem;
-  color: #777;
+  color: #6f6f6f;
+}
+
+.gallery-items img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-items img:hover {
+  transform: scale(1.1);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-items {
+  overflow: hidden;
 }
