@@ -484,3 +484,9 @@ strong {
   padding: 0.8rem 8rem;
   transform: rotate(45deg);
 }
+
+/* FEATURES */
+
+.container.grid.grid--4cols {
+  margin-top: 9.6rem;
+}
