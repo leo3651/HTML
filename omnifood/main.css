@@ -518,3 +518,32 @@ strong {
   line-height: 1.6;
   font-size: 1.6rem;
 }
+
+/************************/
+/* CTA SECTION */
+/************************/
+
+.cta-section {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  overflow: hidden;
+  border-radius: 1.1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  height: 50rem;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+}
+
+.image-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.3),
+      rgba(230, 125, 34, 0.3)
+    ),
+    url(./content/img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}

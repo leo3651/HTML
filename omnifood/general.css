@@ -17,7 +17,7 @@
             1.6
 
         - LETTER SPACING:
-            0.08rem
+            -0.08rem
             -0.15rem
         
         - FONT STYLE:
@@ -28,19 +28,22 @@
   
         - PRIMARY: #e67e22
 
-        - TINTS: #fdf2e9; #fae5d3;
+        - TINTS: #fdf2e9; #fae5d3; #eb984e
 
         - SHADES: #cf711f
 
         - ACCENTS:
 
-        - GREYS: #555 #333
+        - GREYS: #555 #333 #6F6F6F
   
 
   --- 3 SHADOWS
-  
+
+            - 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
   --- 4 BORDER RADIUS
+        - DEFAULT: 9px
+        - MEDIUM: 11px
   
 
   --- 5 WHITESPACE:
