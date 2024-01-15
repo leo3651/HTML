@@ -12,4 +12,58 @@
   .gallery {
     grid-template-columns: 1fr 1fr;
   }
+
+  .gallery-items img {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .testemonials-section {
+    background-color: #fdf2e9;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
 }
+
+/* BELOW 1200px*/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .secondary-heading {
+    font-size: 3.6rem;
+  }
+
+  .tertiary-heading {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .primary-header {
+    padding: 0 3.2rem;
+  }
+
+  .hero-grid-container {
+    gap: 4.8rem;
+  }
+
+  .nav-list {
+    gap: 3.2rem;
+  }
+
+  .testemonials-container {
+    padding: 3.2em 3.2rem;
+  }
+}
+
+/* - FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
