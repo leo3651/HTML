@@ -123,6 +123,53 @@
   .cta button {
     margin-top: 1.2rem;
   }
+
+  /* MOBILE NAV */
+  .mobile-nav-btn {
+    display: inline-block;
+  }
+
+  .main-nav {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .mobile-nav-icon[name="close-outline"] {
+    display: inline-block;
+  }
+
+  .nav-open .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
 }
 
 /* - FONT SIZE SYSTEM (px)
