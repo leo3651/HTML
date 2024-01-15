@@ -1,5 +1,4 @@
 /* BELOW 1344px */
-
 @media (max-width: 84rem) {
   .hero-grid-container {
     max-width: 120rem;
@@ -59,6 +58,70 @@
 
   .testemonials-container {
     padding: 3.2em 3.2rem;
+  }
+}
+
+/* BELOW 944px */
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero-grid-container {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 8rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-txt {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .testemonials-section {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .gallery-items img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cta {
+    grid-template-columns: 0.6fr 0.4fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta button {
+    margin-top: 1.2rem;
   }
 }
 
