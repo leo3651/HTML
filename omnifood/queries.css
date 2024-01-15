@@ -1,0 +1,15 @@
+/* BELOW 1344px */
+
+@media (max-width: 84rem) {
+  .hero-grid-container {
+    max-width: 120rem;
+  }
+
+  .primary-heading {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
