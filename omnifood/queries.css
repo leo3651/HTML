@@ -103,6 +103,10 @@
     grid-template-columns: 1fr;
   }
 
+  .testemonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+
   .gallery {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -141,16 +145,18 @@
     justify-content: center;
     align-items: center;
 
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
     visibility: hidden;
-    transition: all 0.5s;
+    transition: all 0.5s ease-out;
+    transform: translateX(-100%);
   }
 
   .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    transform: translateX(0%);
   }
 
   .nav-open .mobile-nav-icon[name="close-outline"] {
@@ -169,6 +175,54 @@
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 48.5em) {
+  .grid--3cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .grid--4cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .secondary-heading {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-column {
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .logo-column {
+    grid-row: 2;
+    grid-column: 1 / 4;
+  }
+
+  .adress-column {
+    grid-row: 2;
+    grid-column: 4 / 7;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts {
+    margin-top: auto;
   }
 }
 

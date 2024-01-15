@@ -654,10 +654,11 @@ footer {
 
 .footer-link:link,
 .footer-link:visited {
+  display: inline-block;
   text-decoration: none;
   font-size: 1.6rem;
   color: #767676;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in;
 }
 
 .footer-link:hover,
