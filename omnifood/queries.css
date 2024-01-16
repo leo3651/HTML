@@ -178,6 +178,7 @@
   }
 }
 
+/* BELOW 776px */
 @media (max-width: 48.5em) {
   .grid--3cols {
     grid-template-columns: 1fr 1fr;
@@ -223,6 +224,69 @@
 
   .contacts {
     margin-top: auto;
+  }
+}
+
+/* BELOW 640px */
+@media (max-width: 40em) {
+  .grid--2cols-3rows,
+  .grid--3cols,
+  .grid--2cols,
+  .testemonials {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .image-box {
+    height: 50rem;
+    grid-row: 1;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero-grid-container {
+    padding: 0 3.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .z-pattern-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .z-pattern-img-box:last-child {
+    grid-row: 5;
+  }
+
+  .z-pattern-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .form-box {
+    padding: 3.2rem;
   }
 }
 
