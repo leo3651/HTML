@@ -1,10 +1,13 @@
+// mobile nav
 document.querySelector(".mobile-nav-btn").addEventListener("click", () => {
   document.querySelector(".primary-header").classList.toggle("nav-open");
 });
 
+// current year
 const currentYear = new Date().getFullYear();
 document.querySelector(".year").innerHTML = currentYear;
 
+// scroll animations
 const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
@@ -23,3 +26,21 @@ allLinks.forEach((link) => {
     }
   });
 });
+
+// sticky nav
+const sectionHero = document.querySelector(".section-hero");
+const observer = new IntersectionObserver(
+  function (entries) {
+    if (entries[0].isIntersecting === false) {
+      document.body.classList.add("sticky");
+    } else {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+observer.observe(sectionHero);
