@@ -4,11 +4,11 @@ COLORS
 light green: #7ed56f
 medium green: #55c57a
 dark green: #28b485
-
-
-
 */
 
+/***********************/
+/********HEADER*********/
+/******************?****/
 html {
   font-size: 62.5%;
 }
@@ -56,18 +56,62 @@ body {
 .headings {
   color: #fff;
   text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
 }
+
 .primary-heading {
   display: block;
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
+
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  /* animation-delay: 2s;
+  animation-iteration-count: 3; */
+  animation-timing-function: ease-in;
 }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .secondary-heading {
   display: block;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.74rem;
+
+  animation: moveInRight 2s ease-in;
+}
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(10rem);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .text-box {
@@ -75,4 +119,30 @@ body {
   top: 41.5%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
 }
