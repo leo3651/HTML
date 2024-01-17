@@ -42,25 +42,25 @@ body {
   position: relative;
 }
 
-.logo-img {
+.header__logo-img {
   height: auto;
   height: 3.5rem;
 }
 
-.logo-img-box {
+.header__logo-img-box {
   position: absolute;
   top: 4%;
   left: 3%;
 }
 
-.headings {
+.primary-heading {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
 }
 
-.primary-heading {
+.primary-heading--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -89,7 +89,7 @@ body {
   }
 }
 
-.secondary-heading {
+.primary-heading--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -114,7 +114,7 @@ body {
   }
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 41.5%;
   left: 50%;
@@ -145,7 +145,7 @@ body {
   position: relative;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 2s ease-in 0.75s;
   animation-fill-mode: backwards;
 }
@@ -160,8 +160,8 @@ body {
   box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
 }
 
-.btn-white:link,
-.btn-white:visited {
+.btn--white:link,
+.btn--white:visited {
   background-color: #fff;
   color: #777;
 }
@@ -179,7 +179,7 @@ body {
   transition: all 0.3s;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
 
