@@ -9,6 +9,9 @@ dark green: #28b485
 $primary-color: #55c57a;
 $primary-color-light: #7ed56f;
 $primary-color-dark: #28b485;
+$grey-color: #777;
+$white-color: #fff;
+$black-color: #000;
 
 /***********************/
 /********HEADER*********/
@@ -28,7 +31,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #777;
+  color: $grey-color;
   padding: 3rem;
 }
 
@@ -44,37 +47,54 @@ body {
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
-}
 
-.header__logo-img {
-  height: auto;
-  height: 3.5rem;
-}
+  &__logo-img {
+    height: auto;
+    height: 3.5rem;
+  }
 
-.header__logo-img-box {
-  position: absolute;
-  top: 4%;
-  left: 3%;
+  &__logo-img-box {
+    position: absolute;
+    top: 4%;
+    left: 3%;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 41.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
 .primary-heading {
-  color: #fff;
+  color: $white-color;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
-}
 
-.primary-heading--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
 
-  animation-name: moveInLeft;
-  animation-duration: 2s;
-  /* animation-delay: 2s;
-  animation-iteration-count: 3; */
-  animation-timing-function: ease-in;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    /* animation-delay: 2s;
+    animation-iteration-count: 3; */
+    animation-timing-function: ease-in;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.74rem;
+
+    animation: moveInRight 2s ease-in;
+  }
 }
 
 @keyframes moveInLeft {
@@ -94,12 +114,6 @@ body {
 }
 
 .primary-heading--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.74rem;
-
-  animation: moveInRight 2s ease-in;
 }
 
 @keyframes moveInRight {
@@ -118,14 +132,6 @@ body {
   }
 }
 
-.header__text-box {
-  position: absolute;
-  top: 41.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -138,56 +144,58 @@ body {
   }
 }
 
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 1.5rem 4rem;
-  border-radius: 10rem;
-  transition: all 0.2s;
-  position: relative;
-}
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+  }
 
-.btn--animated {
-  animation: moveInBottom 2s ease-in 0.75s;
-  animation-fill-mode: backwards;
-}
+  &--animated {
+    animation: moveInBottom 2s ease-in 0.75s;
+    animation-fill-mode: backwards;
+  }
 
-.btn:hover {
-  transform: translateY(-0.5rem);
-  box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2);
-}
+  &:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0rem 1rem 2rem 0rem rgba($black-color, 0.2);
+  }
 
-.btn:active {
-  transform: translateY(-0.1rem);
-  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
-}
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba($black-color, 0.2);
+  }
 
-.btn--white:link,
-.btn--white:visited {
-  background-color: #fff;
-  color: #777;
-}
+  &--white:link,
+  &--white:visited {
+    background-color: $white-color;
+    color: $grey-color;
+  }
 
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.3s;
-}
+  &--white::after {
+    background-color: $white-color;
+  }
 
-.btn--white::after {
-  background-color: #fff;
-}
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s;
+  }
 
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
 }
