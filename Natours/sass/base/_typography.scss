@@ -1,3 +1,12 @@
+body {
+  font-family: "Lato", "sans serif";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $grey-color;
+  padding: 3rem;
+}
+
 .primary-heading {
   color: $white-color;
   text-transform: uppercase;
@@ -24,5 +33,26 @@
     letter-spacing: 1.74rem;
 
     animation: moveInRight 2s ease-in;
+  }
+}
+
+.secondary-heading {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $primary-color-light,
+    $primary-color-dark
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($black-color, 0.2);
   }
 }
