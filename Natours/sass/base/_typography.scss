@@ -1,7 +1,7 @@
 body {
   font-family: "Lato", "sans serif";
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: $default;
   line-height: 1.7;
   color: $grey-color;
   padding: 3rem;
@@ -58,13 +58,13 @@ body {
 }
 
 .tertiary-heading {
-  font-size: 1.8rem;
+  font-size: $default;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: $default;
 
   &:not(:last-child) {
     margin-bottom: 3rem;
