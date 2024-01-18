@@ -70,6 +70,7 @@
     background-color: $primary-color;
     box-shadow: 0 1rem 2rem rgba($black-color, 0.2);
     transform: translateY(-0.2rem);
+    border-bottom: 1px solid transparent;
   }
   &:active {
     transform: translateY(0);
