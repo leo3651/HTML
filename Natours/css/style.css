@@ -212,7 +212,7 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s; }
   .card-box:hover {
-    transform: scale(1.05) translateY(-1.5rem);
+    transform: scale(1.03) translateY(-1.5rem);
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3); }
   .card-box__icon {
     font-size: 6rem;
@@ -257,7 +257,7 @@ body {
 
 .about-section {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 25rem 0 40rem 0;
   margin-top: -20vh; }
   .about-section__img-box {
     position: relative; }
@@ -267,4 +267,8 @@ body {
   background-color: #f7f7f7;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  transform: skewY(-8deg);
+  margin-top: -22rem; }
+  .features-section > * {
+    transform: skewY(8deg); }
