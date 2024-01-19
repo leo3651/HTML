@@ -7,3 +7,16 @@
     position: relative;
   }
 }
+
+.features-section {
+  background-color: $light-grey-color-1;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($primary-color-light, 0.8),
+      rgba($primary-color-dark, 0.8)
+    ),
+    url("../img/nat-4.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50rem;
+}

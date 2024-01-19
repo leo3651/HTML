@@ -1,6 +1,6 @@
 .composition {
   &__photo {
-    width: 55%;
+    width: 60%;
     box-shadow: 0 1.5rem 4rem rgba($black-color, 0.4);
     border-radius: 0.2rem;
     outline-offset: 2rem;
@@ -19,8 +19,8 @@
     }
 
     &--p3 {
-      top: 29%;
-      left: 20%;
+      top: 38%;
+      left: 11%;
     }
 
     &:hover {
@@ -32,6 +32,6 @@
     }
   }
   &:hover &__photo:not(:hover) {
-    transform: scale(0.8);
+    transform: scale(0.95);
   }
 }
