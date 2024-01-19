@@ -203,8 +203,24 @@ body {
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95); }
 
-.card {
-  background-color: rgba(255, 255, 255, 0.6); }
+.card-box {
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  border-radius: 0.3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s; }
+  .card-box:hover {
+    transform: scale(1.05) translateY(-1.5rem);
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3); }
+  .card-box__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block; }
 
 .header {
   height: 95vh;
@@ -214,7 +230,6 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
   .header__logo-img {
-    height: auto;
     height: 3.5rem; }
   .header__logo-img-box {
     position: absolute;
@@ -248,8 +263,8 @@ body {
     position: relative; }
 
 .features-section {
+  padding: 20rem 0;
   background-color: #f7f7f7;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
   background-position: center;
-  background-size: cover;
-  height: 50rem; }
+  background-size: cover; }

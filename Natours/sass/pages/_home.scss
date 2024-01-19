@@ -9,6 +9,7 @@
 }
 
 .features-section {
+  padding: 20rem 0;
   background-color: $light-grey-color-1;
   background-image: linear-gradient(
       to right bottom,
@@ -18,5 +19,4 @@
     url("../img/nat-4.jpg");
   background-position: center;
   background-size: cover;
-  height: 50rem;
 }
