@@ -2,14 +2,18 @@
   display: grid;
 }
 
+.grid--1col {
+  grid-template-columns: 1fr;
+}
+
 .grid--2cols {
   grid-template-columns: 1fr 1fr;
 }
 
-.grid--4cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
 .grid--3cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4cols {
+  grid-template-columns: repeat(4, 1fr);
 }

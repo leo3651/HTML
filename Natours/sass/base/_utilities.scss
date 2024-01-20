@@ -1,22 +1,35 @@
 .u-center-text {
   text-align: center;
 }
-.u-margin-bottom-big {
-  margin-bottom: 8rem;
-}
+
 .u-margin-bottom-small {
   margin-bottom: 1.5rem;
 }
-.u-grid-hor-padding-medium {
-  padding: 0 3.6rem;
+
+.u-margin-bottom-medium {
+  margin-bottom: 5rem;
 }
-.u-column-gap-medium {
-  column-gap: 8.6rem;
-}
-.u-column-gap-small {
-  column-gap: 4.6rem;
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
 }
 
 .u-margin-top {
   margin-top: 10rem;
+}
+
+.u-grid-hor-padding-medium {
+  padding: 0 3.6rem;
+}
+
+.u-column-gap-small {
+  column-gap: 4.6rem;
+}
+
+.u-column-gap-medium {
+  column-gap: 8.6rem;
+}
+
+.u-row-gap-big {
+  row-gap: 10rem;
 }

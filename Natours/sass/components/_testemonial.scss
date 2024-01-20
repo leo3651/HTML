@@ -1,0 +1,21 @@
+.testemonial {
+  background-color: $white-color;
+  border-radius: 0.3rem;
+  padding: 6rem 6rem 6rem 9rem;
+  margin: 0 auto;
+  width: 75%;
+  transform: skewX(-12deg);
+  box-shadow: 0 3rem 6rem rgba($black-color, 0.25);
+
+  > * {
+    transform: skewX(12deg);
+  }
+  &__img-box {
+    float: left;
+    &-img {
+      height: 20rem;
+      width: 20rem;
+      border-radius: 50%;
+    }
+  }
+}
