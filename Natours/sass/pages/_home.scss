@@ -38,3 +38,34 @@
   background-color: transparent;
   position: relative;
 }
+
+.form-section {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $primary-color-light,
+    $primary-color-dark
+  );
+}
+
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($white-color, 0.9) 50%,
+      transparent 50%
+    ),
+    url("../img/nat-10.jpg");
+  height: 40rem;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 3rem 6rem rgba($black-color, 0.3);
+  overflow: hidden;
+  border-radius: 0.3rem;
+
+  &__form {
+    width: 60%;
+    height: 100%;
+
+    padding: 6rem;
+  }
+}
