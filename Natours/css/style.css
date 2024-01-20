@@ -107,8 +107,8 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
-.u-margin-top {
-  margin-top: 10rem; }
+.u-margin-top-big {
+  margin-top: 9rem; }
 
 .u-grid-hor-padding-medium {
   padding: 0 3.6rem; }
@@ -331,7 +331,7 @@ body {
     font-weight: 100; }
 
 .testemonial {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 0.3rem;
   padding: 6rem 6rem 6rem 9rem;
   margin: 0 auto;
@@ -373,7 +373,20 @@ body {
     transform: translate(-50%, -50%); }
   .testemonial:hover .testemonial__img-box__img {
     transform: scale(1) translateX(-4rem);
-    filter: blur(); }
+    filter: blur(2px) brightness(90%); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .header {
   height: 95vh;
@@ -440,4 +453,5 @@ body {
 
 .testemonials-section {
   padding: 15rem 0;
-  background-color: #f7f7f7; }
+  background-color: transparent;
+  position: relative; }

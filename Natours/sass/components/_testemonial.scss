@@ -1,5 +1,5 @@
 .testemonial {
-  background-color: $white-color;
+  background-color: rgba($white-color, 0.6);
   border-radius: 0.3rem;
   padding: 6rem 6rem 6rem 9rem;
   margin: 0 auto;
@@ -52,6 +52,6 @@
 
   &:hover &__img-box__img {
     transform: scale(1) translateX(-4rem);
-    filter: blur();
+    filter: blur(2px) brightness(90%);
   }
 }
