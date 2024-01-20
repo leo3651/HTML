@@ -10,6 +10,15 @@
     position: relative;
   }
 
+  &--green {
+    background-color: $primary-color;
+    color: $white-color;
+
+    &::after {
+      background-color: $primary-color;
+    }
+  }
+
   &--animated {
     animation: moveInBottom 2s ease-in 0.75s;
     animation-fill-mode: backwards;

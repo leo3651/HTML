@@ -31,6 +31,22 @@
           $secondary-color-dark
         );
       }
+
+      &--2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $primary-color-light,
+          $primary-color-dark
+        );
+      }
+
+      &--3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $tertiary-color-light,
+          $tertiary-color-dark
+        );
+      }
     }
   }
 
@@ -49,6 +65,8 @@
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
     &--1 {
       background-image: linear-gradient(
           $secondary-color-light,
@@ -59,18 +77,18 @@
 
     &--2 {
       background-image: linear-gradient(
-          $secondary-color-light,
-          $secondary-color-dark
+          $primary-color-light,
+          $primary-color-dark
         ),
-        url(../img/nat-5.jpg);
+        url(../img/nat-6.jpg);
     }
 
     &--3 {
       background-image: linear-gradient(
-          $secondary-color-light,
-          $secondary-color-dark
+          $tertiary-color-light,
+          $tertiary-color-dark
         ),
-        url(../img/nat-5.jpg);
+        url(../img/nat-7.jpg);
     }
   }
 
@@ -96,8 +114,18 @@
         );
       }
       &--2 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($primary-color-light, 0.85),
+          rgba($primary-color-dark, 0.85)
+        );
       }
       &--3 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($tertiary-color-light, 0.85),
+          rgba($tertiary-color-dark, 0.85)
+        );
       }
     }
   }
@@ -118,5 +146,30 @@
         }
       }
     }
+  }
+
+  // BACK SIDE
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+  }
+
+  &__box {
+    margin-bottom: 8rem;
+    color: $white-color;
+  }
+
+  &__only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__value {
+    font-size: 6rem;
+    font-weight: 100;
   }
 }
