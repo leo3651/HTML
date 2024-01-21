@@ -49,13 +49,15 @@
 }
 
 .book {
+  width: 90%;
+  margin: 0 auto;
   background-image: linear-gradient(
       105deg,
-      rgba($white-color, 0.9) 50%,
-      transparent 50%
+      rgba($white-color, 0.9) 60%,
+      transparent 60%
     ),
     url("../img/nat-10.jpg");
-  height: 40rem;
+  height: 50rem;
   background-size: cover;
   background-position: center;
   box-shadow: 0 3rem 6rem rgba($black-color, 0.3);
