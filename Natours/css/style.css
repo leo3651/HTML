@@ -120,11 +120,17 @@ body {
 .u-grid-hor-padding-medium {
   padding: 0 3.6rem; }
 
+.u-grid-hor-padding-big {
+  padding: 0 14rem; }
+
 .u-column-gap-small {
   column-gap: 4.6rem; }
 
 .u-column-gap-medium {
   column-gap: 8.6rem; }
+
+.u-column-gap-big {
+  column-gap: 26rem; }
 
 .u-row-gap-big {
   row-gap: 10rem; }
@@ -498,6 +504,9 @@ body {
 .grid--2cols {
   grid-template-columns: 1fr 1fr; }
 
+.grid--2cols--1fr08fr {
+  grid-template-columns: 1fr 0.8fr; }
+
 .grid--3cols {
   grid-template-columns: repeat(3, 1fr); }
 
@@ -507,6 +516,42 @@ body {
 .container {
   max-width: 114rem;
   margin: 0 auto; }
+
+.footer {
+  padding: 10rem 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.4rem;
+  color: #f7f7f7; }
+  .footer__features {
+    display: inline-block;
+    border-top: 1px solid #777;
+    padding: 2rem 0rem; }
+  .footer__list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    text-transform: uppercase; }
+  .footer__img-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.3s;
+    color: #f7f7f7; }
+  .footer__link:hover, .footer__link:active {
+    color: #55c57a;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: scale(1.2) rotate(5deg);
+    background-color: #333; }
+  .footer__copyright {
+    border-top: 1px solid #777;
+    padding: 2rem 0rem; }
 
 .about-section {
   background-color: #f7f7f7;
