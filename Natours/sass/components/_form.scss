@@ -14,6 +14,7 @@
     border-bottom: 3px solid transparent;
     width: 85%;
     display: block;
+    transition: all 0.3s;
 
     &::-webkit-input-placeholder {
       color: $grey-color-2;
@@ -44,5 +45,53 @@
     transform: translateY(-4rem);
     opacity: 0;
     visibility: hidden;
+  }
+
+  &__radio-input {
+    // opacity: 0;
+    // visibility: hidden;
+    display: none;
+  }
+
+  &__radio-group {
+    display: inline-block;
+    width: 45%;
+    position: relative;
+  }
+
+  &__radio-btn {
+    border: 0.5rem solid $primary-color;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 50%;
+      background-color: $primary-color;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all 0.3s;
+    }
+  }
+
+  &__radio-label {
+    font-size: $default;
+    cursor: pointer;
+    margin-left: 6rem;
+  }
+
+  &__radio-input:checked + &__radio-label &__radio-btn::after {
+    opacity: 1;
   }
 }
