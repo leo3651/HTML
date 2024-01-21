@@ -111,6 +111,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-top-small {
+  margin-top: 2rem; }
+
 .u-margin-top-big {
   margin-top: 9rem; }
 
@@ -126,54 +129,50 @@ body {
 .u-row-gap-big {
   row-gap: 10rem; }
 
-.btn:link, .btn:visited {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 1.5rem 4rem;
-  border-radius: 10rem;
-  transition: all 0.2s;
-  position: relative; }
-
-.btn--green {
-  background-color: #55c57a;
-  color: #fff; }
-  .btn--green::after {
-    background-color: #55c57a; }
-
-.btn--animated {
-  animation: moveInBottom 2s ease-in 0.75s;
-  animation-fill-mode: backwards; }
-
-.btn:hover {
-  transform: translateY(-0.5rem);
-  box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2); }
-  .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0; }
-
-.btn:active {
-  transform: translateY(-0.1rem);
-  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2); }
-
-.btn--white:link, .btn--white:visited {
-  background-color: #fff;
-  color: #777; }
-
-.btn--white::after {
-  background-color: #fff; }
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.3s; }
+.btn {
+  border: none;
+  cursor: pointer; }
+  .btn, .btn:link, .btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative; }
+  .btn--green {
+    background-color: #55c57a;
+    color: #fff; }
+    .btn--green::after {
+      background-color: #55c57a; }
+  .btn--animated {
+    animation: moveInBottom 2s ease-in 0.75s;
+    animation-fill-mode: backwards; }
+  .btn:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2); }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+  .btn:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2); }
+  .btn--white:link, .btn--white:visited {
+    background-color: #fff;
+    color: #777; }
+  .btn--white::after {
+    background-color: #fff; }
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s; }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
@@ -464,7 +463,7 @@ body {
 .form__radio-label {
   font-size: 1.6rem;
   cursor: pointer;
-  margin-left: 6rem; }
+  margin-left: 4rem; }
 
 .form__radio-input:checked + .form__radio-label .form__radio-btn::after {
   opacity: 1; }

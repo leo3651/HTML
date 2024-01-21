@@ -88,7 +88,7 @@
   &__radio-label {
     font-size: $default;
     cursor: pointer;
-    margin-left: 6rem;
+    margin-left: 4rem;
   }
 
   &__radio-input:checked + &__radio-label &__radio-btn::after {

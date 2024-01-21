@@ -1,4 +1,7 @@
 .btn {
+  border: none;
+  cursor: pointer;
+  &,
   &:link,
   &:visited {
     display: inline-block;
