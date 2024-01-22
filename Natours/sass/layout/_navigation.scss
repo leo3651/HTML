@@ -8,6 +8,7 @@
     right: 6rem;
     border-radius: 50%;
     z-index: 2000;
+    box-shadow: 0 1rem 2rem rgba($black-color, 0.1);
   }
 
   &__input {
@@ -26,6 +27,7 @@
       $primary-color-dark
     );
     z-index: 1500;
+    transition: all 0.8s ease;
   }
 
   &__container {
@@ -35,27 +37,66 @@
     top: 0;
     left: 0;
     z-index: 1700;
+    opacity: 0;
+    transition: all 0.4s;
+    visibility: hidden;
   }
   &__list {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-65%, -50%);
     list-style: none;
     text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
   }
   &__item {
+    margin: 1rem;
   }
 
   &__link {
     &:link,
     &:visited {
+      display: inline-block;
       text-decoration: none;
       text-transform: uppercase;
+      font-size: 3rem;
+      color: $white-color;
+      font-weight: 300;
+      padding: 1rem 2rem;
+      background-image: linear-gradient(120deg, transparent 50%, white 50%);
+      background-size: 240%;
+      transition: all 0.4s;
+      cursor: context-menu;
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $primary-color;
+      transform: translateX(1rem);
     }
   }
 
   &__input:checked ~ &__background {
-    transform: scale(2000);
+    transform: scale(80);
+  }
+
+  &__input:checked ~ &__container &__list {
+    // animation: navMoveInLeft 0.5s ease;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &__input:checked ~ &__container {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__input:checked ~ &__container &__link {
+    &:link,
+    &:visited {
+      cursor: pointer;
+    }
   }
 }

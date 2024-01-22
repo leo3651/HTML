@@ -15,6 +15,16 @@ dark green: #28b485
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes navMoveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-65%, -50%); }
+  80% {
+    transform: translate(-35%, -50%); }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%); } }
+
 @keyframes moveInRight {
   0% {
     transform: translateX(10rem);
@@ -561,7 +571,8 @@ body {
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 2000; }
+  z-index: 2000;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
 
 .navigation__input {
   display: none; }
@@ -574,7 +585,8 @@ body {
   width: 6rem;
   border-radius: 50%;
   background-image: radial-gradient(#7ed56f, #28b485);
-  z-index: 1500; }
+  z-index: 1500;
+  transition: all 0.8s ease; }
 
 .navigation__container {
   height: 100vh;
@@ -582,22 +594,55 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1700; }
+  z-index: 1700;
+  opacity: 0;
+  transition: all 0.4s;
+  visibility: hidden; }
 
 .navigation__list {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-65%, -50%);
   list-style: none;
-  text-align: center; }
+  text-align: center;
+  transition: all 0.5s;
+  opacity: 0; }
+
+.navigation__item {
+  margin: 1rem; }
 
 .navigation__link:link, .navigation__link:visited {
+  display: inline-block;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(120deg, transparent 50%, white 50%);
+  background-size: 240%;
+  transition: all 0.4s;
+  cursor: context-menu; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #55c57a;
+  transform: translateX(1rem); }
 
 .navigation__input:checked ~ .navigation__background {
-  transform: scale(2000); }
+  transform: scale(80); }
+
+.navigation__input:checked ~ .navigation__container .navigation__list {
+  opacity: 1;
+  transform: translate(-50%, -50%); }
+
+.navigation__input:checked ~ .navigation__container {
+  opacity: 1;
+  visibility: visible; }
+
+.navigation__input:checked ~ .navigation__container .navigation__link:link, .navigation__input:checked ~ .navigation__container .navigation__link:visited {
+  cursor: pointer; }
 
 .about-section {
   background-color: #f7f7f7;
