@@ -32,11 +32,12 @@
 
   &__container {
     height: 100vh;
-    width: 100%;
+    width: 0%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1700;
+    transition: all 0.7s;
     // opacity: 0;
     // visibility: hidden;
   }
@@ -90,6 +91,7 @@
   }
 
   &__input:checked ~ &__container {
+    width: 100%;
     // opacity: 1;
     // visibility: visible;
   }
@@ -103,5 +105,53 @@
 
   &__input:not(:checked) ~ &__container &__list {
     animation: navMoveOut 0.7s ease-in;
+  }
+
+  &__icon {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &,
+    &::after,
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 2px;
+      width: 3rem;
+      background-color: $grey-color-3;
+      position: absolute;
+      transition: all 0.3s;
+    }
+
+    &::before {
+      top: -0.8rem;
+    }
+
+    &::after {
+      top: 0.8rem;
+    }
+  }
+
+  &__btn:hover &__icon {
+    &::before {
+      transform: translateY(-0.3rem);
+    }
+    &::after {
+      transform: translateY(0.3rem);
+    }
+  }
+
+  &__input:checked ~ &__btn &__icon {
+    background-color: transparent;
+
+    &::before {
+      transform: rotate(135deg);
+      top: 0;
+    }
+
+    &::after {
+      transform: rotate(-135deg);
+      top: 0;
+    }
   }
 }

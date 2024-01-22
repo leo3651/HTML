@@ -598,11 +598,12 @@ body {
 
 .navigation__container {
   height: 100vh;
-  width: 100%;
+  width: 0%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1700; }
+  z-index: 1700;
+  transition: all 0.7s; }
 
 .navigation__list {
   position: absolute;
@@ -642,11 +643,46 @@ body {
   animation: navMoveInLeft 0.7s ease-out;
   opacity: 1; }
 
+.navigation__input:checked ~ .navigation__container {
+  width: 100%; }
+
 .navigation__input:checked ~ .navigation__container .navigation__link:link, .navigation__input:checked ~ .navigation__container .navigation__link:visited {
   cursor: pointer; }
 
 .navigation__input:not(:checked) ~ .navigation__container .navigation__list {
   animation: navMoveOut 0.7s ease-in; }
+
+.navigation__icon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .navigation__icon, .navigation__icon::after, .navigation__icon::before {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 3rem;
+    background-color: #333;
+    position: absolute;
+    transition: all 0.3s; }
+  .navigation__icon::before {
+    top: -0.8rem; }
+  .navigation__icon::after {
+    top: 0.8rem; }
+
+.navigation__btn:hover .navigation__icon::before {
+  transform: translateY(-0.3rem); }
+
+.navigation__btn:hover .navigation__icon::after {
+  transform: translateY(0.3rem); }
+
+.navigation__input:checked ~ .navigation__btn .navigation__icon {
+  background-color: transparent; }
+  .navigation__input:checked ~ .navigation__btn .navigation__icon::before {
+    transform: rotate(135deg);
+    top: 0; }
+  .navigation__input:checked ~ .navigation__btn .navigation__icon::after {
+    transform: rotate(-135deg);
+    top: 0; }
 
 .about-section {
   background-color: #f7f7f7;
