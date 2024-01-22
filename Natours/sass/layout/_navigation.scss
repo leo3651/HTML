@@ -1,13 +1,61 @@
 .navigation {
-  &__input {
+  &__btn {
+    background-color: $white-color;
+    position: fixed;
+    height: 7rem;
+    width: 7rem;
+    top: 6rem;
+    right: 6rem;
+    border-radius: 50%;
+    z-index: 2000;
   }
+
+  &__input {
+    display: none;
+  }
+
   &__background {
+    position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-image: radial-gradient(
+      $primary-color-light,
+      $primary-color-dark
+    );
+    z-index: 1500;
+  }
+
+  &__container {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1700;
   }
   &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
   }
   &__item {
   }
 
   &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  &__input:checked ~ &__background {
+    transform: scale(2000);
   }
 }
