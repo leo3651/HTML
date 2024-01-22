@@ -18,12 +18,20 @@ dark green: #28b485
 @keyframes navMoveInLeft {
   0% {
     opacity: 0;
-    transform: translate(-65%, -50%); }
+    transform: translate(-400rem, -50%); }
   80% {
-    transform: translate(-35%, -50%); }
+    transform: translate(20rem, -50%); }
   100% {
     opacity: 1;
     transform: translate(-50%, -50%); } }
+
+@keyframes navMoveOut {
+  0% {
+    transform: translate(-50%, -50%); }
+  20% {
+    transform: translate(20rem, -50%); }
+  100% {
+    transform: translate(-400rem, -50%); } }
 
 @keyframes moveInRight {
   0% {
@@ -586,7 +594,7 @@ body {
   border-radius: 50%;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1500;
-  transition: all 0.8s ease; }
+  transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
 .navigation__container {
   height: 100vh;
@@ -594,20 +602,17 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1700;
-  opacity: 0;
-  transition: all 0.4s;
-  visibility: hidden; }
+  z-index: 1700; }
 
 .navigation__list {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-65%, -50%);
+  transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
-  transition: all 0.5s;
-  opacity: 0; }
+  opacity: 0;
+  transition: all 0.7s; }
 
 .navigation__item {
   margin: 1rem; }
@@ -634,15 +639,14 @@ body {
   transform: scale(80); }
 
 .navigation__input:checked ~ .navigation__container .navigation__list {
-  opacity: 1;
-  transform: translate(-50%, -50%); }
-
-.navigation__input:checked ~ .navigation__container {
-  opacity: 1;
-  visibility: visible; }
+  animation: navMoveInLeft 0.7s ease-out;
+  opacity: 1; }
 
 .navigation__input:checked ~ .navigation__container .navigation__link:link, .navigation__input:checked ~ .navigation__container .navigation__link:visited {
   cursor: pointer; }
+
+.navigation__input:not(:checked) ~ .navigation__container .navigation__list {
+  animation: navMoveOut 0.7s ease-in; }
 
 .about-section {
   background-color: #f7f7f7;
