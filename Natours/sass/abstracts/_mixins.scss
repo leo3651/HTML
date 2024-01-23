@@ -1,0 +1,42 @@
+//Media queries manager
+
+/* 
+
+
+0-600px -PHONES
+600px - 900px    : PORTRAIT TABLETS
+900px - 1200px   : LANDSCAPE TABLETS
+1200px - 1800px  : DESKTOP+1800px          : BIG DESKTOP
+
+
+*/
+
+@mixin respond($breakpoint) {
+  // 1800px
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+
+  // 1200px
+  @if $breakpoint == landscape-tablet {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  // 900px
+  @if $breakpoint == portrait-tablet {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  // 600px
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+}
