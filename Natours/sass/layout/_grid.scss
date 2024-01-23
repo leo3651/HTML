@@ -10,6 +10,10 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.grid--2cols-05-1 {
+  grid-template-columns: 0.5fr 1fr;
+}
+
 .grid--2cols--1fr08fr {
   grid-template-columns: 1fr 0.8fr;
 }

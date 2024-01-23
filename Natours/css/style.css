@@ -51,6 +51,14 @@ dark green: #28b485
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes containerWidth {
+  0% {
+    width: 100%; }
+  95% {
+    width: 100%; }
+  100% {
+    width: 0%; } }
+
 html {
   font-size: 62.5%; }
 
@@ -152,6 +160,9 @@ body {
 
 .u-row-gap-big {
   row-gap: 10rem; }
+
+.align-vert {
+  align-items: center; }
 
 .btn {
   border: none;
@@ -492,6 +503,31 @@ body {
 .form__radio-input:checked + .form__radio-label .form__radio-btn::after {
   opacity: 1; }
 
+.popup {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: white; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text-box {
+    padding: 0.5rem 3rem; }
+  .popup__text {
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: 1px solid grey; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
@@ -521,6 +557,9 @@ body {
 
 .grid--2cols {
   grid-template-columns: 1fr 1fr; }
+
+.grid--2cols-05-1 {
+  grid-template-columns: 0.5fr 1fr; }
 
 .grid--2cols--1fr08fr {
   grid-template-columns: 1fr 0.8fr; }
@@ -602,8 +641,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1700;
-  transition: all 0.7s; }
+  z-index: 1700; }
 
 .navigation__list {
   position: absolute;
@@ -642,6 +680,9 @@ body {
 .navigation__input:checked ~ .navigation__container .navigation__list {
   animation: navMoveInLeft 0.7s ease-out;
   opacity: 1; }
+
+.navigation__input:not(:checked) ~ .navigation__container {
+  animation: containerWidth 0.8s ease-in; }
 
 .navigation__input:checked ~ .navigation__container {
   width: 100%; }

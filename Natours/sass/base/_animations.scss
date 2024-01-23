@@ -71,3 +71,17 @@
     transform: translate(0);
   }
 }
+
+@keyframes containerWidth {
+  0% {
+    width: 100%;
+  }
+
+  95% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}

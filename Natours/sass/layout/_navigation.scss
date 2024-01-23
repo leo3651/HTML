@@ -37,7 +37,7 @@
     top: 0;
     left: 0;
     z-index: 1700;
-    transition: all 0.7s;
+    // transition: all 0.7s;
     // opacity: 0;
     // visibility: hidden;
   }
@@ -88,6 +88,10 @@
   &__input:checked ~ &__container &__list {
     animation: navMoveInLeft 0.7s ease-out;
     opacity: 1;
+  }
+
+  &__input:not(:checked) ~ &__container {
+    animation: containerWidth 0.8s ease-in;
   }
 
   &__input:checked ~ &__container {
