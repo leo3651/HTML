@@ -290,7 +290,7 @@ body {
     left: 11%; }
     @media (max-width: 56.25em) {
       .composition__photo--p3 {
-        top: 76%;
+        top: 67%;
         left: 11%; } }
   .composition__photo:hover {
     border-radius: 0px;
@@ -652,6 +652,11 @@ body {
 
 .grid--2cols--1fr08fr {
   grid-template-columns: 1fr 0.8fr; }
+  @media (max-width: 56.25em) {
+    .grid--2cols--1fr08fr {
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+      justify-items: center; } }
 
 .grid--3cols {
   grid-template-columns: repeat(3, 1fr); }
@@ -659,7 +664,7 @@ body {
     .grid--3cols {
       grid-template-columns: 1fr;
       row-gap: 4rem;
-      width: 45%; } }
+      width: 50rem; } }
 
 .grid--4cols {
   grid-template-columns: repeat(4, 1fr); }
@@ -691,6 +696,9 @@ body {
   .footer__img-box {
     text-align: center;
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .footer__img-box {
+        margin-bottom: 4rem; } }
   .footer__logo {
     width: 15rem;
     height: auto; }
@@ -708,6 +716,10 @@ body {
   .footer__copyright {
     border-top: 1px solid #777;
     padding: 2rem 0rem; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 60%;
+        text-align: center; } }
 
 .navigation__btn {
   background-color: #fff;
@@ -719,6 +731,10 @@ body {
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
+  @media (max-width: 56.25em) {
+    .navigation__btn {
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__input {
   display: none; }
@@ -733,6 +749,10 @@ body {
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1500;
   transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media (max-width: 56.25em) {
+    .navigation__background {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__container {
   height: 100vh;
@@ -850,7 +870,7 @@ body {
   @media (max-width: 56.25em) {
     .features-section {
       transform: skewY(-3deg);
-      margin-top: -10rem;
+      margin-top: -5rem;
       padding: 15rem 0; } }
 
 .tours-section {
