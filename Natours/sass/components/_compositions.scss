@@ -16,11 +16,21 @@
     &--p2 {
       top: 7%;
       right: 0;
+
+      @include respond(portrait-tablet) {
+        top: 13%;
+        right: -5.4rem;
+      }
     }
 
     &--p3 {
       top: 38%;
       left: 11%;
+
+      @include respond(portrait-tablet) {
+        top: 76%;
+        left: 11%;
+      }
     }
 
     &:hover {

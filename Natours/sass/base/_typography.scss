@@ -5,6 +5,10 @@ body {
   line-height: 1.7;
   color: $grey-color;
   padding: 3rem;
+
+  @include respond(portrait-tablet) {
+    padding: 0;
+  }
 }
 
 .primary-heading {
@@ -24,6 +28,11 @@ body {
     /* animation-delay: 2s;
     animation-iteration-count: 3; */
     animation-timing-function: ease-in;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--sub {
@@ -33,6 +42,10 @@ body {
     letter-spacing: 1.74rem;
 
     animation: moveInRight 2s ease-in;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -54,6 +67,14 @@ body {
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba($black-color, 0.2);
+  }
+
+  @include respond(landscape-tablet) {
+    font-size: 2.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
   }
 }
 
