@@ -12,6 +12,10 @@
 
 .u-margin-bottom-big {
   margin-bottom: 8rem;
+
+  @include respond(portrait-tablet) {
+    margin-bottom: 6rem;
+  }
 }
 
 .u-margin-top-small {

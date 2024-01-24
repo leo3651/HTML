@@ -5,6 +5,7 @@
 
   @include respond(portrait-tablet) {
     margin-top: -33vh;
+    padding: 25rem 0 18rem 0;
   }
 
   &__img-box {
@@ -37,7 +38,7 @@
   @include respond(portrait-tablet) {
     transform: skewY(-3deg);
     margin-top: -5rem;
-    padding: 15rem 0;
+    padding: 8rem 0;
   }
 }
 
@@ -45,12 +46,20 @@
   padding: 25rem 0 15rem 0;
   margin-top: -15rem;
   background-color: $light-grey-color-1;
+
+  @include respond(portrait-tablet) {
+    padding: 25rem 0 10rem 0;
+  }
 }
 
 .testemonials-section {
   padding: 15rem 0;
   background-color: transparent;
   position: relative;
+
+  @include respond(portrait-tablet) {
+    padding: 6rem 0;
+  }
 }
 
 .form-section {
@@ -60,6 +69,10 @@
     $primary-color-light,
     $primary-color-dark
   );
+
+  @include respond(portrait-tablet) {
+    padding: 10rem 0;
+  }
 }
 
 .book {

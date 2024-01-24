@@ -5,6 +5,10 @@
   font-size: 1.4rem;
   color: $light-grey-color-1;
 
+  @include respond(portrait-tablet) {
+    padding: 5rem 0;
+  }
+
   &__features {
     display: inline-block;
     border-top: 1px solid $grey-color;
@@ -57,7 +61,7 @@
 
   &__copyright {
     border-top: 1px solid $grey-color;
-    padding: 2rem 0rem;
+    padding: 2rem 0rem 0 0;
 
     @include respond(portrait-tablet) {
       width: 60%;
