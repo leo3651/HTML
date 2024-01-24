@@ -11,16 +11,27 @@
 
   &__features {
     display: inline-block;
-    border-top: 1px solid $grey-color;
-    padding: 2rem 0rem;
+
+    @include respond(phone) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__list {
+    padding-top: 2rem;
+    border-top: 1px solid $grey-color;
     display: flex;
     list-style: none;
     gap: 1.5rem;
 
     text-transform: uppercase;
+
+    @include respond(phone) {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 60%;
+    }
 
     &-item {
     }

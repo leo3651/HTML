@@ -186,6 +186,9 @@ body {
 
 .u-grid-hor-padding-medium {
   padding: 0 3.6rem; }
+  @media (max-width: 37.5em) {
+    .u-grid-hor-padding-medium {
+      padding: 0; } }
 
 .u-grid-hor-padding-big {
   padding: 0 14rem; }
@@ -288,6 +291,9 @@ body {
       .composition__photo--p1 {
         top: 22%;
         left: -4.5rem; } }
+    @media (max-width: 37.5em) {
+      .composition__photo--p1 {
+        left: -2.5rem; } }
   .composition__photo--p2 {
     top: 7%;
     right: 0; }
@@ -295,9 +301,12 @@ body {
       .composition__photo--p2 {
         top: 22%;
         right: -4.5rem; } }
+    @media (max-width: 37.5em) {
+      .composition__photo--p2 {
+        right: -2.5rem; } }
   .composition__photo--p3 {
-    top: 12%;
-    left: 31%; }
+    top: 40%;
+    left: 14%; }
     @media (max-width: 56.25em) {
       .composition__photo--p3 {
         top: 10%;
@@ -776,9 +785,12 @@ body {
   @media (max-width: 56.25em) {
     .grid--2cols {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 22rem;
       width: 80%;
       row-gap: 2rem; } }
+  @media (max-width: 37.5em) {
+    .grid--2cols {
+      grid-template-rows: 1fr 12rem; } }
 
 .grid--2cols-05-1 {
   grid-template-columns: 0.333fr 0.666fr; }
@@ -798,6 +810,9 @@ body {
       grid-template-columns: 1fr;
       row-gap: 4rem;
       width: 50rem; } }
+  @media (max-width: 37.5em) {
+    .grid--3cols {
+      width: 80%; } }
 
 .grid--4cols {
   grid-template-columns: repeat(4, 1fr); }
@@ -806,6 +821,9 @@ body {
       grid-template-columns: 1fr;
       row-gap: 4rem;
       width: 45%; } }
+  @media (max-width: 37.5em) {
+    .grid--4cols {
+      width: 70%; } }
 
 .container {
   max-width: 114rem;
@@ -821,14 +839,23 @@ body {
     .footer {
       padding: 5rem 0; } }
   .footer__features {
-    display: inline-block;
-    border-top: 1px solid #777;
-    padding: 2rem 0rem; }
+    display: inline-block; }
+    @media (max-width: 37.5em) {
+      .footer__features {
+        display: flex;
+        justify-content: center; } }
   .footer__list {
+    padding-top: 2rem;
+    border-top: 1px solid #777;
     display: flex;
     list-style: none;
     gap: 1.5rem;
     text-transform: uppercase; }
+    @media (max-width: 37.5em) {
+      .footer__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 60%; } }
   .footer__img-box {
     text-align: center;
     margin-bottom: 8rem; }

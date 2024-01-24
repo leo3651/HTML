@@ -11,9 +11,13 @@
 
   @include respond(portrait-tablet) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 22rem;
     width: 80%;
     row-gap: 2rem;
+  }
+
+  @include respond(phone) {
+    grid-template-rows: 1fr 12rem;
   }
 }
 
@@ -39,6 +43,10 @@
     row-gap: 4rem;
     width: 50rem;
   }
+
+  @include respond(phone) {
+    width: 80%;
+  }
 }
 
 .grid--4cols {
@@ -48,5 +56,9 @@
     grid-template-columns: 1fr;
     row-gap: 4rem;
     width: 45%;
+  }
+
+  @include respond(phone) {
+    width: 70%;
   }
 }

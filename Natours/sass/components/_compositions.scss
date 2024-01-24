@@ -20,6 +20,10 @@
         top: 22%;
         left: -4.5rem;
       }
+
+      @include respond(phone) {
+        left: -2.5rem;
+      }
     }
 
     &--p2 {
@@ -30,11 +34,15 @@
         top: 22%;
         right: -4.5rem;
       }
+
+      @include respond(phone) {
+        right: -2.5rem;
+      }
     }
 
     &--p3 {
-      top: 12%;
-      left: 31%;
+      top: 40%;
+      left: 14%;
 
       @include respond(portrait-tablet) {
         top: 10%;
