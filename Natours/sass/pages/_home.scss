@@ -90,10 +90,23 @@
   overflow: hidden;
   border-radius: 0.3rem;
 
+  @include respond(portrait-tablet) {
+    max-width: 50rem;
+    background-image: linear-gradient(
+        105deg,
+        rgba($white-color, 0.9),
+        rgba($white-color, 0.9)
+      ),
+      url("../img/nat-10.jpg");
+  }
+
   &__form {
     width: 60%;
     height: 100%;
-
     padding: 6rem;
+
+    @include respond(portrait-tablet) {
+      width: 100%;
+    }
   }
 }

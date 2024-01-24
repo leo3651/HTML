@@ -182,7 +182,9 @@
     -moz-perspective: 150rem;
     position: relative;
     height: auto;
-
+    overflow: hidden;
+    border-radius: 0.3rem;
+    box-shadow: 0 1.5rem 4rem rgba($black-color, 0.2);
     &__side {
       height: auto;
       transition: all 0.8s ease;
@@ -192,8 +194,8 @@
       width: 100%;
       backface-visibility: visible;
       overflow: hidden;
-      border-radius: 0.3rem;
-      box-shadow: 0 1.5rem 4rem rgba($black-color, 0.2);
+      border-radius: 0rem;
+      box-shadow: none;
 
       &--front {
         background-color: $white-color;
@@ -231,7 +233,7 @@
     }
 
     &:hover &__side--front {
-      transform: rotateY(-180deg);
+      transform: rotateY(0deg);
     }
     &:hover &__side--back {
       transform: rotateY(0);
