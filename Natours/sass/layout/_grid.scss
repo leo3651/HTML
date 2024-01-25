@@ -23,6 +23,10 @@
 
 .grid--2cols-05-1 {
   grid-template-columns: 0.333fr 0.666fr;
+
+  @include respond(landscape-tablet) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid--2cols--1fr08fr {
