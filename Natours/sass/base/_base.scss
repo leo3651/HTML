@@ -28,3 +28,8 @@ html {
   outline: none;
   box-shadow: 0 0rem 2rem rgba($black-color, 0.3);
 }
+
+::selection {
+  background-color: $primary-color;
+  color: $white-color;
+}

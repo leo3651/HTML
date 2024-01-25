@@ -176,7 +176,7 @@
 }
 
 // MEDIA QUERY
-@include respond(portrait-tablet) {
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .pricing-card {
     // FUNCTIONALITY
     perspective: 150rem;
