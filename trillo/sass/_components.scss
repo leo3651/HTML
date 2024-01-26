@@ -122,3 +122,68 @@
   &__name {
   }
 }
+
+////////////////////////////////
+/// GALLERY
+.gallery {
+  display: flex;
+
+  &__img {
+    width: 100%;
+  }
+}
+
+//////////////////////////////// OVERVIEW
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--grey-light-2);
+  &__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+  }
+
+  &__stars {
+    display: flex;
+    margin-right: auto;
+  }
+
+  &__icon-star,
+  &__icon-location {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: var(--primary);
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+  }
+
+  &__rating {
+    text-align: center;
+    &-average {
+    }
+
+    &-count {
+    }
+  }
+}
+
+//////////////////////////////// BTN-INLINE
+.inline-btn {
+  border: none;
+  color: var(--primary);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+
+  &:hover {
+    color: var(--grey-dark-1);
+  }
+}

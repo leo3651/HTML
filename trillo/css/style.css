@@ -151,6 +151,42 @@ body {
       height: 3rem;
       border-radius: 50%; }
 
+.gallery {
+  display: flex; }
+  .gallery__img {
+    width: 100%; }
+
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--grey-light-2); }
+  .overview__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem; }
+  .overview__stars {
+    display: flex;
+    margin-right: auto; }
+  .overview__icon-star, .overview__icon-location {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: var(--primary); }
+  .overview__location {
+    display: flex;
+    align-items: center; }
+  .overview__rating {
+    text-align: center; }
+
+.inline-btn {
+  border: none;
+  color: var(--primary);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor; }
+  .inline-btn:hover {
+    color: var(--grey-dark-1); }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -160,7 +196,7 @@ body {
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--grey-light-2);
+  border-bottom: 1px solid var(--grey-light-2);
   display: flex;
   justify-content: space-between;
   align-items: center; }
