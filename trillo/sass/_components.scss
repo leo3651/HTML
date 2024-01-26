@@ -8,6 +8,10 @@
 /// SEARCH
 .search {
   flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &__input {
     font-family: inherit;
     font-size: inherit;
@@ -18,19 +22,43 @@
     border-radius: 20rem;
     width: 90%;
     transition: all 0.3s;
+    margin-right: -3.5rem;
 
     &:focus {
       outline: none;
       width: 100%;
+      background-color: var(--grey-light-3);
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      font-size: 1.4rem;
+      color: var(--grey-light-4);
     }
   }
 
   &__btn {
+    line-height: 0;
+    border: none;
+    background-color: var(--grey-light-2);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(0.2rem);
+    }
+  }
+
+  &__input:focus + &__btn {
+    background-color: var(--grey-light-3);
   }
 
   &__icon {
     height: 2rem;
     width: 2rem;
+    fill: var(--grey-dark-3);
   }
 }
 
@@ -38,16 +66,45 @@
 /// USER NAV
 .user-nav {
   display: flex;
+  align-self: stretch;
   align-items: center;
+
+  & > * {
+    height: 100%;
+    padding: 0 2rem;
+    cursor: pointer;
+  }
+
+  & > *:hover {
+    background-color: var(--grey-light-2);
+  }
+
   &__icon-box {
+    display: flex;
+    align-items: center;
+    position: relative;
   }
 
   &__icon {
     height: 2.25rem;
     width: 2.25rem;
+    fill: var(--grey-dark-2);
   }
 
   &__notification {
+    font-size: 0.8rem;
+    border-radius: 50%;
+    height: 1.75rem;
+    width: 1.75rem;
+    background-color: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
   }
 
   &__user-img-box {
