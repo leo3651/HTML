@@ -2,6 +2,7 @@
 /// LOGO
 .logo {
   height: 3.5rem;
+  margin-left: 2rem;
 }
 
 ////////////////////////////////
@@ -73,6 +74,7 @@
     height: 100%;
     padding: 0 2rem;
     cursor: pointer;
+    transition: all 0.3s;
   }
 
   & > *:hover {
@@ -110,6 +112,7 @@
   &__user-img-box {
     display: flex;
     align-items: center;
+    gap: 1rem;
     &__photo {
       height: 3rem;
       border-radius: 50%;
