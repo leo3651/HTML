@@ -14,6 +14,60 @@
     <title>trillo &mdash; Your all-in-one booking app</title>
   </head>
   <body>
-    trillo as
+    <div class="container">
+      <!-- HEADER -->
+      <header class="header">
+        <img class="logo" src="./img/logo.png" alt="Logo image" />
+
+        <!-- SEARCH BAR -->
+        <form action="#" class="search">
+          <input
+            class="search__input"
+            type="text"
+            placeholder="Search hotels"
+          />
+          <button class="search__btn">
+            <svg class="search__icon">
+              <use xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <!-- USER NAV -->
+        <nav class="user-nav">
+          <!-- Icon bookmark -->
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="./img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">4</span>
+          </div>
+
+          <!-- Icon chat -->
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="./img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">2</span>
+          </div>
+
+          <!-- User image -->
+          <div class="user-nav__user-img-box">
+            <img
+              src="./img/user.jpg"
+              alt="User photo"
+              class="user-nav__user-img-box__photo"
+            />
+            <span class="user-nav__name">Joans</span>
+          </div>
+        </nav>
+      </header>
+
+      <!-- CONTENT -->
+      <div class="content-container">
+        <nav class="side-nav">Navigation</nav>
+        <main class="main-content">Main</main>
+      </div>
+    </div>
   </body>
 </html>

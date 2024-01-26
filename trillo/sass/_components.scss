@@ -1,0 +1,64 @@
+////////////////////////////////
+/// LOGO
+.logo {
+  height: 3.5rem;
+}
+
+////////////////////////////////
+/// SEARCH
+.search {
+  flex: 0 0 40%;
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--grey-light-2);
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 20rem;
+    width: 90%;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+    }
+  }
+
+  &__btn {
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+////////////////////////////////
+/// USER NAV
+.user-nav {
+  display: flex;
+  align-items: center;
+  &__icon-box {
+  }
+
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  &__notification {
+  }
+
+  &__user-img-box {
+    display: flex;
+    align-items: center;
+    &__photo {
+      height: 3rem;
+      border-radius: 50%;
+    }
+  }
+
+  &__name {
+  }
+}
