@@ -107,24 +107,3 @@
   background-color: var(--grey-light-1);
   border-bottom: var(--line);
 }
-
-.description {
-  background-color: #fff;
-  box-shadow: var(--shadow-light);
-  flex: 0 0 60%;
-  padding: 3rem;
-
-  &__paragraph {
-  }
-
-  &__list {
-    &__item {
-    }
-  }
-}
-
-.user-reviews {
-  background-color: yellowgreen;
-  flex: 1;
-  margin-left: 4.5rem;
-}

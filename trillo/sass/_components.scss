@@ -1,12 +1,10 @@
-////////////////////////////////
-/// LOGO
+//////////////////////////////// LOGO
 .logo {
   height: 3.5rem;
   margin-left: 2rem;
 }
 
-////////////////////////////////
-/// SEARCH
+//////////////////////////////// SEARCH
 .search {
   flex: 0 0 40%;
   display: flex;
@@ -63,8 +61,7 @@
   }
 }
 
-////////////////////////////////
-/// USER NAV
+//////////////////////////////// USER NAV
 .user-nav {
   display: flex;
   align-self: stretch;
@@ -123,8 +120,7 @@
   }
 }
 
-////////////////////////////////
-/// GALLERY
+//////////////////////////////// GALLERY
 .gallery {
   display: flex;
 
@@ -232,4 +228,79 @@
     transform: scale(1);
     box-shadow: none;
   }
+}
+
+//////////////////////////////// DESCRIPTION
+.description {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  flex: 0 0 60%;
+  padding: 3rem;
+  font-size: 1.4rem;
+
+  &__paragraph {
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 3rem 0;
+    padding: 3rem 0;
+    border-top: var(--line);
+    border-bottom: var(--line);
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      flex: 0 0 50%;
+      margin-bottom: 0.7rem;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 1.2rem;
+        width: 1.2rem;
+        margin-right: 0.8rem;
+        background-color: var(--primary);
+        -webkit-mask-image: url("../img/chevron-thin-right.svg");
+        -webkit-mask-size: cover;
+        mask-image: url("../img/chevron-thin-right.svg");
+        mask-size: cover;
+      }
+    }
+  }
+}
+
+//////////////////////////////// RECOMMEND
+.recommend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__count {
+  }
+
+  &__friends {
+    display: flex;
+  }
+
+  &__photo {
+    height: 4.6rem;
+    width: 4.6rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.3rem #fff;
+    &:not(:last-child) {
+      margin-right: -2rem;
+    }
+  }
+}
+
+//////////////////////////////// USER REVIEWS
+.user-reviews {
+  background-color: yellowgreen;
+  flex: 1;
+  margin-left: 4.5rem;
 }
