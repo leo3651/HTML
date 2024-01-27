@@ -1,10 +1,12 @@
-//////////////////////////////// LOGO
+////////////////////////////////
+/// LOGO
 .logo {
   height: 3.5rem;
   margin-left: 2rem;
 }
 
-//////////////////////////////// SEARCH
+////////////////////////////////
+/// SEARCH
 .search {
   flex: 0 0 40%;
   display: flex;
@@ -61,7 +63,8 @@
   }
 }
 
-//////////////////////////////// USER NAV
+////////////////////////////////
+/// USER NAV
 .user-nav {
   display: flex;
   align-self: stretch;
@@ -120,7 +123,8 @@
   }
 }
 
-//////////////////////////////// GALLERY
+////////////////////////////////
+/// GALLERY
 .gallery {
   display: flex;
 
@@ -130,7 +134,8 @@
   }
 }
 
-//////////////////////////////// OVERVIEW
+////////////////////////////////
+/// OVERVIEW
 .overview {
   display: flex;
   align-items: center;
@@ -191,7 +196,8 @@
   }
 }
 
-//////////////////////////////// BTN-INLINE
+////////////////////////////////
+/// BTN-INLINE
 .inline-btn {
   border: none;
   color: var(--primary);
@@ -230,7 +236,8 @@
   }
 }
 
-//////////////////////////////// DESCRIPTION
+////////////////////////////////
+/// DESCRIPTION
 .description {
   background-color: #fff;
   box-shadow: var(--shadow-light);
@@ -275,7 +282,8 @@
   }
 }
 
-//////////////////////////////// RECOMMEND
+////////////////////////////////
+/// RECOMMEND
 .recommend {
   font-size: 1.3rem;
   color: var(--grey-dark-3);
@@ -300,7 +308,8 @@
   }
 }
 
-//////////////////////////////// USER REVIEWS
+////////////////////////////////
+/// USER REVIEWS
 .user-reviews {
   flex: 1;
   margin-left: 4.5rem;
@@ -380,4 +389,74 @@ span {
   font-size: 20rem;
   color: var(--grey-light-2);
   z-index: -1;
+}
+
+////////////////////////////////
+/// CTA
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+  &__heading {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: none;
+    background-image: linear-gradient(
+      to right,
+      var(--primary-light),
+      var(--primary-dark)
+    );
+    border-radius: 20rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    & > * {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      transition: all 0.3s;
+    }
+
+    &__hidden {
+      position: absolute;
+      top: -100%;
+      left: 0%;
+      padding: 2rem 0;
+    }
+
+    &__visible {
+      padding: 2rem 7.5rem;
+    }
+
+    &:focus {
+      outline: none;
+      animation: pulsate 1s infinite;
+    }
+  }
+
+  &__btn:hover {
+    background-image: linear-gradient(
+      to left,
+      var(--primary-light),
+      var(--primary-dark)
+    );
+  }
+
+  &__btn:hover &__btn__hidden {
+    top: 0;
+  }
+
+  &__btn:hover &__btn__visible {
+    transform: translateY(100%);
+  }
 }

@@ -337,6 +337,48 @@ span {
   color: var(--grey-light-2);
   z-index: -1; }
 
+.cta {
+  padding: 3.5rem 0;
+  text-align: center; }
+  .cta__heading {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase; }
+  .cta__btn {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: none;
+    background-image: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+    border-radius: 20rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer; }
+    .cta__btn > * {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      transition: all 0.3s; }
+    .cta__btn__hidden {
+      position: absolute;
+      top: -100%;
+      left: 0%;
+      padding: 2rem 0; }
+    .cta__btn__visible {
+      padding: 2rem 7.5rem; }
+    .cta__btn:focus {
+      outline: none;
+      animation: pulsate 1s infinite; }
+  .cta__btn:hover {
+    background-image: linear-gradient(to left, var(--primary-light), var(--primary-dark)); }
+  .cta__btn:hover .cta__btn__hidden {
+    top: 0; }
+  .cta__btn:hover .cta__btn__visible {
+    transform: translateY(100%); }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
