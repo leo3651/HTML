@@ -281,17 +281,19 @@ body {
 .user-reviews {
   flex: 1;
   margin-left: 4.5rem;
-  font-size: 1.4rem;
-  text-align: center; }
+  font-size: 1.4rem; }
 
 .review {
+  z-index: 33;
+  position: relative;
   padding: 3rem;
   background-color: #fff;
-  box-shadow: var(--shadow-light); }
+  box-shadow: var(--shadow-light);
+  overflow: hidden; }
   .review:not(:last-child) {
     margin-bottom: 3.5rem; }
   .review__text {
-    margin-bottom: 2.5rem; }
+    margin-bottom: 2rem; }
   .review__user {
     display: flex;
     align-items: center; }
@@ -303,16 +305,37 @@ body {
   .review__user-box {
     margin-right: auto; }
     .review__user-box__name {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem; }
+    .review__user-box__date {
+      font-size: 1rem;
+      color: var(--grey-dark-3); }
   .review__rating {
-    color: var(--primary); }
+    color: var(--primary);
+    font-size: 2.2rem;
+    font-weight: 300; }
+  .review__btn-box {
+    text-align: center; }
+  .review__btn:hover span {
+    margin-left: 0.8rem; }
 
-.space {
+span {
+  transition: all 0.3s;
+  margin-left: 0.3rem; }
+
+.review::before {
+  content: "\201C";
+  font-family: sans-serif;
   display: inline-block;
-  width: 0%; }
-
-.all-reviews:hover .space {
-  width: 5%; }
+  position: absolute;
+  line-height: 1;
+  top: -2.9rem;
+  left: -0.8rem;
+  font-size: 20rem;
+  color: var(--grey-light-2);
+  z-index: -1; }
 
 .container {
   max-width: 120rem;
