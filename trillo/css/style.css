@@ -191,13 +191,17 @@ body {
       .overview__heading {
         font-size: 1.8rem;
         padding: 1.25rem 2rem; } }
+    @media only screen and (max-width: 26.6em) {
+      .overview__heading {
+        padding: 3rem 2rem 0.5rem 2rem; } }
   .overview__stars {
     display: flex;
     margin-right: auto; }
     @media only screen and (max-width: 26.6em) {
       .overview__stars {
-        padding: 1rem 0;
-        margin-right: 0; } }
+        padding: 0.5rem 0;
+        margin-right: 0;
+        order: 3; } }
   .overview__icon-star, .overview__icon-location {
     height: 1.75rem;
     width: 1.75rem;
@@ -210,6 +214,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media only screen and (max-width: 26.6em) {
+      .overview__location {
+        margin-left: 0;
+        padding: 1rem 0; } }
   .overview__rating {
     background-color: var(--primary);
     color: #fff;
@@ -223,6 +231,13 @@ body {
     @media only screen and (max-width: 35em) {
       .overview__rating {
         padding: 0 1.5rem; } }
+    @media only screen and (max-width: 26.6em) {
+      .overview__rating {
+        align-self: center;
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        order: 4; } }
     .overview__rating-average {
       font-size: 2.25rem;
       font-weight: 300;

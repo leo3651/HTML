@@ -178,6 +178,9 @@
     }
 
     //426px
+    @media only screen and (max-width: 26.6em) {
+      padding: 3rem 2rem 0.5rem 2rem;
+    }
   }
 
   &__stars {
@@ -188,6 +191,7 @@
     @media only screen and (max-width: 26.6em) {
       padding: 0.5rem 0;
       margin-right: 0;
+      order: 3;
     }
   }
 
@@ -208,6 +212,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: 26.6em) {
+      margin-left: 0;
+      padding: 1rem 0;
+    }
   }
 
   &__rating {
@@ -221,8 +230,18 @@
     margin-left: 3rem;
     padding: 0 2.25rem;
 
+    //500px
     @media only screen and (max-width: 35em) {
       padding: 0 1.5rem;
+    }
+
+    //426px
+    @media only screen and (max-width: 26.6em) {
+      align-self: center;
+      margin: 0;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      order: 4;
     }
 
     &-average {
