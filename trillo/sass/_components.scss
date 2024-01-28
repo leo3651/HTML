@@ -13,6 +13,13 @@
   align-items: center;
   justify-content: center;
 
+  //500px
+  @media only screen and (max-width: 31.25em) {
+    flex: 0 0 100%;
+    order: 2;
+    margin: 1.5rem 0;
+  }
+
   &__input {
     font-family: inherit;
     font-size: inherit;
@@ -25,10 +32,20 @@
     transition: all 0.3s;
     margin-right: -3.5rem;
 
+    //500px
+    @media only screen and (max-width: 31.25em) {
+      width: 70%;
+    }
+
     &:focus {
       outline: none;
       width: 100%;
       background-color: var(--grey-light-3);
+
+      //500px
+      @media only screen and (max-width: 31.25em) {
+        width: 80%;
+      }
     }
 
     &::-webkit-input-placeholder {
@@ -140,17 +157,38 @@
   display: flex;
   align-items: center;
   border-bottom: var(--line);
+
+  //426px
+  @media only screen and (max-width: 26.6em) {
+    flex-direction: column;
+    justify-items: center;
+  }
+
   &__heading {
     font-size: 2.25rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
+
+    //560px
+    @media only screen and (max-width: 35em) {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
+
+    //426px
   }
 
   &__stars {
     display: flex;
     margin-right: auto;
+
+    //426px
+    @media only screen and (max-width: 26.6em) {
+      padding: 0.5rem 0;
+      margin-right: 0;
+    }
   }
 
   &__icon-star,
@@ -183,10 +221,18 @@
     margin-left: 3rem;
     padding: 0 2.25rem;
 
+    @media only screen and (max-width: 35em) {
+      padding: 0 1.5rem;
+    }
+
     &-average {
       font-size: 2.25rem;
       font-weight: 300;
       margin-bottom: -0.3rem;
+
+      @media only screen and (max-width: 35em) {
+        font-size: 1.8rem;
+      }
     }
 
     &-count {
@@ -245,6 +291,11 @@
   padding: 3rem;
   font-size: 1.4rem;
 
+  //900px
+  @media only screen and (max-width: 56.25em) {
+    padding: 2rem;
+  }
+
   &__paragraph {
     &:not(:last-of-type) {
       margin-bottom: 2rem;
@@ -291,6 +342,7 @@
   justify-content: space-between;
   align-items: center;
   &__count {
+    margin-right: 1rem;
   }
 
   &__friends {
@@ -314,6 +366,17 @@
   flex: 1;
   margin-left: 4.5rem;
   font-size: 1.4rem;
+
+  //900px
+  @media only screen and (max-width: 56.25em) {
+    margin-left: 3rem;
+  }
+
+  //560px
+  @media only screen and (max-width: 35em) {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
 }
 
 .review {
@@ -323,9 +386,14 @@
   background-color: #fff;
   box-shadow: var(--shadow-light);
   overflow: hidden;
-  &:not(:last-child) {
-    margin-bottom: 3.5rem;
+  margin-bottom: 3.5rem;
+
+  //900px
+  @media only screen and (max-width: 56.25em) {
+    padding: 2rem;
+    margin-bottom: 3rem;
   }
+
   &__text {
     margin-bottom: 2rem;
   }
@@ -373,7 +441,7 @@
   }
 }
 
-span {
+span.arrow {
   transition: all 0.3s;
   margin-left: 0.3rem;
 }
@@ -396,6 +464,12 @@ span {
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+
+  //900px
+  @media only screen and (max-width: 56.25em) {
+    padding: 2rem 0;
+  }
+
   &__heading {
     font-size: 2rem;
     font-weight: 300;

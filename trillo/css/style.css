@@ -81,6 +81,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .search {
+      flex: 0 0 100%;
+      order: 2;
+      margin: 1.5rem 0; } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -92,10 +97,16 @@ body {
     width: 90%;
     transition: all 0.3s;
     margin-right: -3.5rem; }
+    @media only screen and (max-width: 31.25em) {
+      .search__input {
+        width: 70%; } }
     .search__input:focus {
       outline: none;
       width: 100%;
       background-color: var(--grey-light-3); }
+      @media only screen and (max-width: 31.25em) {
+        .search__input:focus {
+          width: 80%; } }
     .search__input::-webkit-input-placeholder {
       font-weight: 100;
       font-size: 1.4rem;
@@ -166,15 +177,27 @@ body {
   display: flex;
   align-items: center;
   border-bottom: var(--line); }
+  @media only screen and (max-width: 26.6em) {
+    .overview {
+      flex-direction: column;
+      justify-items: center; } }
   .overview__heading {
     font-size: 2.25rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 35em) {
+      .overview__heading {
+        font-size: 1.8rem;
+        padding: 1.25rem 2rem; } }
   .overview__stars {
     display: flex;
     margin-right: auto; }
+    @media only screen and (max-width: 26.6em) {
+      .overview__stars {
+        padding: 1rem 0;
+        margin-right: 0; } }
   .overview__icon-star, .overview__icon-location {
     height: 1.75rem;
     width: 1.75rem;
@@ -197,10 +220,16 @@ body {
     align-items: center;
     margin-left: 3rem;
     padding: 0 2.25rem; }
+    @media only screen and (max-width: 35em) {
+      .overview__rating {
+        padding: 0 1.5rem; } }
     .overview__rating-average {
       font-size: 2.25rem;
       font-weight: 300;
       margin-bottom: -0.3rem; }
+      @media only screen and (max-width: 35em) {
+        .overview__rating-average {
+          font-size: 1.8rem; } }
     .overview__rating-count {
       font-size: 0.8rem;
       text-transform: uppercase; }
@@ -238,6 +267,9 @@ body {
   flex: 0 0 60%;
   padding: 3rem;
   font-size: 1.4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .description {
+      padding: 2rem; } }
   .description__paragraph:not(:last-of-type) {
     margin-bottom: 2rem; }
   .description__list {
@@ -271,6 +303,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .recommend__count {
+    margin-right: 1rem; }
   .recommend__friends {
     display: flex; }
   .recommend__photo {
@@ -285,6 +319,13 @@ body {
   flex: 1;
   margin-left: 4.5rem;
   font-size: 1.4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .user-reviews {
+      margin-left: 3rem; } }
+  @media only screen and (max-width: 35em) {
+    .user-reviews {
+      margin-left: 0;
+      margin-top: 3rem; } }
 
 .review {
   z-index: 33;
@@ -292,9 +333,12 @@ body {
   padding: 3rem;
   background-color: #fff;
   box-shadow: var(--shadow-light);
-  overflow: hidden; }
-  .review:not(:last-child) {
-    margin-bottom: 3.5rem; }
+  overflow: hidden;
+  margin-bottom: 3.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .review {
+      padding: 2rem;
+      margin-bottom: 3rem; } }
   .review__text {
     margin-bottom: 2rem; }
   .review__user {
@@ -324,7 +368,7 @@ body {
   .review__btn:hover span {
     margin-left: 0.8rem; }
 
-span {
+span.arrow {
   transition: all 0.3s;
   margin-left: 0.3rem; }
 
@@ -343,6 +387,9 @@ span {
 .cta {
   padding: 3.5rem 0;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .cta {
+      padding: 2rem 0; } }
   .cta__heading {
     font-size: 2rem;
     font-weight: 300;
@@ -399,6 +446,11 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 31.25em) {
+    .header {
+      flex-wrap: wrap;
+      height: auto;
+      padding-top: 1.5rem; } }
 
 .content-container {
   display: flex; }
@@ -463,11 +515,25 @@ span {
     @media only screen and (max-width: 56.25em) {
       .side-nav__link:link, .side-nav__link:visited {
         padding: 2rem 3rem; } }
+    @media only screen and (max-width: 35em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        padding: 1.5rem 1rem;
+        flex-direction: column; } }
   .side-nav__icon {
     height: 1.75rem;
     width: 1.75rem;
     fill: currentColor;
     margin-right: 2rem; }
+    @media only screen and (max-width: 35em) {
+      .side-nav__icon {
+        margin-right: 0;
+        margin-bottom: 0.7rem;
+        width: 1.5rem;
+        height: 1.5rem; } }
+  @media only screen and (max-width: 35em) {
+    .side-nav__text {
+      display: inline-block;
+      text-align: center; } }
   .side-nav__copyright {
     font-size: 1.2rem;
     text-align: center;
@@ -486,3 +552,9 @@ span {
   padding: 4.5rem;
   background-color: var(--grey-light-1);
   border-bottom: var(--line); }
+  @media only screen and (max-width: 56.25em) {
+    .details {
+      padding: 3rem; } }
+  @media only screen and (max-width: 35em) {
+    .details {
+      flex-direction: column; } }
