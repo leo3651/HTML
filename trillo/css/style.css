@@ -59,6 +59,9 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Open sans", sans-serif;
@@ -384,6 +387,10 @@ span {
   margin: 8rem auto;
   background-color: var(--grey-light-1);
   box-shadow: var(--shadow); }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      max-width: 100%; } }
 
 .header {
   height: 7rem;
@@ -395,6 +402,9 @@ span {
 
 .content-container {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .content-container {
+      flex-direction: column; } }
 
 .side-nav {
   background-color: var(--grey-dark-1);
@@ -406,10 +416,24 @@ span {
   .side-nav__list {
     list-style: none;
     margin-top: 3.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__list {
+        margin: 0;
+        display: flex;
+        align-items: stretch; } }
     .side-nav__list__item {
       position: relative; }
+      @media only screen and (max-width: 56.25em) {
+        .side-nav__list__item {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center; } }
       .side-nav__list__item:not(:last-child) {
         margin-bottom: 0.5rem; }
+        @media only screen and (max-width: 56.25em) {
+          .side-nav__list__item:not(:last-child) {
+            margin: 0; } }
       .side-nav__list__item::before {
         content: "";
         position: absolute;
@@ -436,6 +460,9 @@ span {
     transition: all 0.2s;
     position: relative;
     z-index: 22; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        padding: 2rem 3rem; } }
   .side-nav__icon {
     height: 1.75rem;
     width: 1.75rem;
@@ -446,6 +473,9 @@ span {
     text-align: center;
     padding: 2.5rem;
     color: var(--grey-light-4); }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__copyright {
+        display: none; } }
 
 .main-content {
   background-color: #fff;
