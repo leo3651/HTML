@@ -2,4 +2,36 @@
   background-color: $color-primary;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
+  text-align: center;
+}
+
+.nav-btn {
+  border: none;
+  border-radius: 0;
+  position: relative;
+  margin-top: 3rem;
+  &,
+  &::after,
+  &::before {
+    height: 2px;
+    width: 3rem;
+    background-color: #fff;
+    display: inline-block;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    transform: translateY(1rem);
+    left: 0;
+  }
+
+  &::after {
+    transform: translateY(-1rem);
+    left: 0;
+  }
 }
