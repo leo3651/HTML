@@ -10,6 +10,7 @@
   background-color: $color-grey-light-1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  row-gap: 3.5rem;
 
   &__img {
     width: 100%;
@@ -55,16 +56,29 @@
     }
   }
 
-  &__location {
-  }
-
+  &__location,
   &__rooms {
+    margin-top: 2.5rem;
   }
 
-  &__area {
-  }
-
+  &__area,
+  &__location,
+  &__rooms,
   &__price {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      fill: $color-primary;
+    }
+
+    p {
+    }
   }
 
   &__btn {
