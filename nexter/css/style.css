@@ -44,7 +44,29 @@ body {
 
 .footer {
   background-color: #101d2c;
-  grid-column: full-start / fulle-end; }
+  grid-column: full-start / fulle-end;
+  padding: 8rem; }
+  .footer__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem; }
+    .footer__list__item__link:link, .footer__list__item__link:visited {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      font-family: "Josefin Sans", sans-serif;
+      text-align: center;
+      padding: 1.5rem;
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.05); }
+  .footer__copyright {
+    margin: 0 auto;
+    margin-top: 6rem;
+    width: 70%;
+    text-align: center;
+    color: #aaa; }
 
 .gallery {
   background-color: #f9f7f6;
