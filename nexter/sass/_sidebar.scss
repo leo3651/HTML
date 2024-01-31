@@ -9,12 +9,12 @@
   border: none;
   border-radius: 0;
   position: relative;
-  margin-top: 3rem;
+  margin-top: 4.5rem;
   &,
   &::after,
   &::before {
     height: 2px;
-    width: 3rem;
+    width: 4rem;
     background-color: #fff;
     display: inline-block;
   }
@@ -26,12 +26,12 @@
   }
 
   &::before {
-    transform: translateY(1rem);
+    transform: translateY(1.5rem);
     left: 0;
   }
 
   &::after {
-    transform: translateY(-1rem);
+    transform: translateY(-1.5rem);
     left: 0;
   }
 }

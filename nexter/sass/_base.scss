@@ -17,6 +17,11 @@ $font-display: "Josefin Sans", sans-serif;
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+
+  //1200px
+  @media only screen and (max-width: 75em) {
+    font-size: 50%;
+  }
 }
 
 *,
