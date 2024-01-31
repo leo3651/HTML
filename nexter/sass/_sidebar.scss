@@ -3,6 +3,13 @@
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
   text-align: center;
+
+  //922px
+  @media only screen and (max-width: 62em) {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    text-align: right;
+  }
 }
 
 .nav-btn {
@@ -10,6 +17,13 @@
   border-radius: 0;
   position: relative;
   margin-top: 4.5rem;
+
+  //922px
+  @media only screen and (max-width: 62em) {
+    margin: 3rem 0;
+    margin-right: 3rem;
+  }
+
   &,
   &::after,
   &::before {

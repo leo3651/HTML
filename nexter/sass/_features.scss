@@ -6,6 +6,11 @@
   grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
   grid-gap: 6rem;
   align-items: start;
+
+  //900px
+  @media only screen and (max-width: 56.25em) {
+    margin: 8rem 0;
+  }
 }
 
 .feature {

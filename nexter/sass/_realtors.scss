@@ -8,12 +8,28 @@
   align-content: center;
   justify-items: center;
 
+  //900px
+  @media only screen and (max-width: 56.25em) {
+    grid-column: 1/-1;
+    padding: 5rem 3rem;
+  }
+
   &__cont {
     display: grid;
     grid-template-columns: min-content max-content;
     column-gap: 2rem;
     row-gap: 5vh;
     align-items: center;
+
+    //900px
+    @media only screen and (max-width: 56.25em) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
+
+    //600px
+    @media only screen and (max-width: 37.15em) {
+      grid-template-columns: min-content max-content;
+    }
   }
 
   &__img {

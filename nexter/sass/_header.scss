@@ -16,6 +16,17 @@
   justify-content: center;
   gap: 3rem;
 
+  //900px
+  @media only screen and (max-width: 56.25em) {
+    grid-column: 1 / -1;
+  }
+
+  //600px
+  @media only screen and (max-width: 37.5em) {
+    padding: 5rem;
+    padding-top: 3rem;
+  }
+
   &__logo {
     height: 3rem;
     justify-self: center;
@@ -40,12 +51,6 @@
       display: inline-block;
       height: 1px;
       background-color: currentColor;
-    }
-
-    &::after {
-    }
-
-    &::before {
     }
   }
 

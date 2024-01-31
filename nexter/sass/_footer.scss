@@ -10,6 +10,11 @@
     align-items: center;
     gap: 2rem;
 
+    //928px
+    @media only screen and (max-width: 58em) {
+      grid-template-columns: repeat(auto-fit, minmax(23.6rem, 1fr));
+    }
+
     &__item {
       &__link {
         &:link,
