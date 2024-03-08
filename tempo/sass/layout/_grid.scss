@@ -1,0 +1,68 @@
+.grid {
+  display: grid;
+}
+
+.grid--1col {
+  grid-template-columns: 1fr;
+}
+
+.grid--2cols {
+  grid-template-columns: 1fr 1fr;
+
+  @include respond(portrait-tablet) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 22rem;
+    width: 80%;
+    row-gap: 2rem;
+  }
+
+  @include respond(phone) {
+    grid-template-rows: 1fr 12rem;
+  }
+}
+
+.grid--2cols-05-1 {
+  grid-template-columns: 0.333fr 0.666fr;
+
+  @include respond(landscape-tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid--2cols--1fr08fr {
+  grid-template-columns: 1fr 0.8fr;
+
+  @include respond(portrait-tablet) {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    justify-items: center;
+  }
+}
+
+.grid--3cols {
+  grid-template-columns: repeat(3, 1fr);
+
+  @include respond(portrait-tablet) {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    width: 50rem;
+  }
+
+  @include respond(phone) {
+    width: 80%;
+  }
+}
+
+.grid--4cols {
+  grid-template-columns: repeat(4, 1fr);
+
+  @include respond(portrait-tablet) {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    width: 45%;
+  }
+
+  @include respond(phone) {
+    width: 70%;
+  }
+}
